@@ -20,8 +20,8 @@ export default function Home() {
         <AboutSection />
         <WhoWeServeSection />
          <OurServicesSection />
+         <OurProcessSection />
         <IntroductionSection />    
-        <OurProcessSection />
         <MeetAdvisorSection />
         <CtaSection />
       </main>
