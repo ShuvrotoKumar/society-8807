@@ -8,6 +8,7 @@ import { OurProcessSection } from '@/components/sections/our-process-section';
 import { MeetAdvisorSection } from '@/components/sections/meet-advisor-section';
 import { CtaSection } from '@/components/sections/cta-section';
 import { Footer } from '@/components/layout/footer';
+import { AboutSection } from '@/components/sections/about';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       
       <main>
         <HeroSection />
+        <AboutSection />
         <IntroductionSection />
         <WhoWeServeSection />
         <OurServicesSection />
