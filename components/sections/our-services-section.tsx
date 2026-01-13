@@ -4,55 +4,60 @@ export const OurServicesSection: React.FC = () => {
   const services = [
     {
       title: "Investment Management",
-      description: "Strategic portfolio management tailored to your risk tolerance and financial goals",
-      features: ["Portfolio diversification", "Risk assessment", "Performance monitoring"]
+      description:
+        "Evidence-based portfolio construction with tax-aware rebalancing, risk management, and transparent fee structures aligned to your long-term objectives"
     },
     {
       title: "Financial Planning",
-      description: "Comprehensive financial planning to secure your future and achieve your goals",
-      features: ["Retirement planning", "Tax optimization", "Estate planning"]
+      description:
+        "Holistic planning encompassing retirement, education funding, insurance analysis, and cash flow modeling to support life transitions"
     },
     {
-      title: "Wealth Preservation",
-      description: "Protect and grow your wealth through sophisticated strategies",
-      features: ["Asset protection", "Inflation hedging", "Capital preservation"]
+      title: "Estate & Legacy Planning",
+      description:
+        "Coordinated estate design with legal and tax advisors to preserve wealth across generations and align with philanthropic intentions"
     },
     {
-      title: "Legacy Planning",
-      description: "Ensure your wealth benefits future generations through strategic planning",
-      features: ["Trust services", "Philanthropic planning", "Family governance"]
+      title: "Tax Strategy",
+      description:
+        "Proactive tax planning including loss harvesting, Roth conversions, charitable giving strategies, and income timing optimization"
+    },
+    {
+      title: "Retirement Planning",
+      description:
+        "Withdrawal strategy, Social Security optimization, healthcare planning, and sustainable spending frameworks for retirement confidence"
+    },
+    {
+      title: "Executive Compensation",
+      description:
+        "Stock option exercise planning, restricted stock management, deferred compensation analysis, and equity diversification strategies"
     }
   ];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Services</h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Comprehensive wealth management solutions designed to meet all your financial needs
+    <section className="bg-[#1A1A1A] py-20 md:py-28">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: 'Playfair Display, serif' }}>
+            Our Services
+          </h2>
+          <p className="mt-3 text-sm md:text-base text-white/60" style={{ fontFamily: 'Playfair Display, serif' }}>
+            Comprehensive wealth management built on fiduciary principles
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
           {services.map((service, index) => (
-            <div key={index} className="bg-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-                {service.title}
-              </h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                {service.description}
-              </p>
-              <ul className="space-y-3">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center">
-                    <div className="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-sm">
-                      ✓
-                    </div>
-                    <span className="text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
+            <div key={index} className="flex gap-6">
+              <div className="w-px bg-[#C9A961]/80" />
+              <div style={{ fontFamily: 'Playfair Display, serif' }}>
+                <h3 className="text-white font-semibold text-base md:text-lg leading-snug">
+                  {service.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/60">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

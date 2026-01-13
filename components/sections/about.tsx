@@ -20,6 +20,7 @@ export const AboutSection: React.FC = () => {
               third-party payments, or proprietary product incentives. Our approach is rooted in evidence-based investing, comprehensive planning, and transparent communication designed for the long term.
             </p>
           </div>
+          <div className="mt-4 h-px w-14 mx-auto bg-[#C9A961]/70" />
         </div>
       </section>
     </>
