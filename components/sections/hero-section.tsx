@@ -23,7 +23,7 @@ export const HeroSection: React.FC = () => {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
           <Button
             variant="outline"
-            className="px-8 py-3 border-2 border-[#C9A961] bg-[#1A1A1A] text-[#C9A961] hover:bg-[#C9A961] hover:text-[#d7be86] hover:border-[#d7be86] transition-colors duration-300 text-base focus:ring-0 focus:ring-offset-0"
+            className="px-8 py-3 border-2 border-[#C9A961] !bg-transparent hover:!bg-transparent text-white hover:text-[#d7be86] hover:border-[#C9A961] transition-colors duration-300 text-base focus:ring-0 focus:ring-offset-0"
           >
             Schedule a Consultation
           </Button>
