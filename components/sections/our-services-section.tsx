@@ -48,7 +48,7 @@ export const OurServicesSection: React.FC = () => {
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
           {services.map((service, index) => (
-            <div key={index} className="flex gap-6">
+            <div key={index} className="flex gap-6 transition-transform duration-300 ease-out hover:scale-[1.05]">
               <div className="w-px bg-[#C9A961]/80" />
               <div style={{ fontFamily: 'Playfair Display, serif' }}>
                 <h3 className="text-white font-semibold text-base md:text-lg leading-snug">
