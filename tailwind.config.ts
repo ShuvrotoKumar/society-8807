@@ -11,6 +11,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['"Playfair Display"', 'serif'],
+        'serif': ['"Playfair Display"', 'serif'],
+      },
       colors: {
         blue: {
           50: "#eff6ff",
