@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
             <Link href="/" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Home</Link>
             <Link href="/about" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>About</Link>
             <Link href="/services" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Services</Link>
-            <Link href="/wealthcare" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>WealthCare</Link>
+            <Link href="/whoweserve" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Who We Serve</Link>
             <Link href="/insights" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Insights</Link>
             <Link href="/submit" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Submit</Link>
           </nav>
