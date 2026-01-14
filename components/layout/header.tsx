@@ -8,21 +8,23 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="images/logo.png" 
-              alt="Society Max" 
-              className="h-8 w-auto mr-2"
-            />
+            <Link href="/">
+              <img 
+                src="images/logo.png" 
+                alt="Society Max" 
+                className="h-8 w-auto mr-2"
+              />
+            </Link>
           </div>
           
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="#" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Home</Link>
-            <Link href="#" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>About</Link>
-            <Link href="#" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Services</Link>
-            <Link href="#" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>WealthCare</Link>
-            <Link href="#" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Insights</Link>
-            <Link href="#" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Submit</Link>
+            <Link href="/" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Home</Link>
+            <Link href="/about" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>About</Link>
+            <Link href="/services" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Services</Link>
+            <Link href="/wealthcare" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>WealthCare</Link>
+            <Link href="/insights" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Insights</Link>
+            <Link href="/submit" className="text-gray-100 hover:text-[#C9A961] font-medium transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Submit</Link>
           </nav>
           
           {/* Buttons */}
