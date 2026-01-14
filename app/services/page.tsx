@@ -109,7 +109,7 @@ export default function ServicesPage() {
                       </div>
                     </div>
 
-                    <div className="min-w-0">
+                    <div className="min-w-0 transition-all duration-300 ease-in-out transform hover:scale-105">
                       <h2 className="text-lg font-semibold text-neutral-900 md:text-xl">
                         {title}
                       </h2>
