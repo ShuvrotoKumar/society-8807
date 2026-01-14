@@ -149,7 +149,7 @@ export default function ServicesPage() {
                   <Handshake className="h-5 w-5 text-[#D4AF37]" />
                 </div>
                 <h3 className="mt-5 text-lg font-medium text-neutral-100">Ongoing Partnership</h3>
-                <p className="mx-auto mt-3 max-w-xs text-xs leading-6 text-neutral-300">
+                <p className="mx-auto mt-3 max-w-xs text-md leading-6 text-neutral-300">
                   We work with you continuously, not just at a single point in time. Your financial plan
                   evolves as your life does.
                 </p>
@@ -160,7 +160,7 @@ export default function ServicesPage() {
                   <CalendarCheck className="h-5 w-5 text-[#D4AF37]" />
                 </div>
                 <h3 className="mt-5 text-lg font-medium text-neutral-100">Regular Reviews</h3>
-                <p className="mx-auto mt-3 max-w-xs text-xs leading-6 text-neutral-300">
+                <p className="mx-auto mt-3 max-w-xs text-md leading-6 text-neutral-300">
                   Quarterly or semi-annual meetings to review progress, adjust strategies, and address
                   new opportunities or concerns.
                 </p>
@@ -171,14 +171,14 @@ export default function ServicesPage() {
                   <MessageCircle className="h-5 w-5 text-[#D4AF37]" />
                 </div>
                 <h3 className="mt-5 text-lg font-medium text-neutral-100">Always Accessible</h3>
-                <p className="mx-auto mt-3 max-w-xs text-xs leading-6 text-neutral-300">
+                <p className="mx-auto mt-3 max-w-xs text-md leading-6 text-neutral-300">
                   Between scheduled meetings, we’re available for questions, guidance, and support
                   whenever you need it.
                 </p>
               </div>
             </div>
 
-            <p className="mx-auto mt-12 max-w-3xl text-center text-xs leading-6 text-neutral-300">
+            <p className="mx-auto mt-12 max-w-3xl text-center text-md leading-6 text-neutral-300">
               This isn’t a transactional relationship. We’re committed to being your trusted advisor
               through every stage of your financial journey—offering proactive guidance, thoughtful
               planning, and the peace of mind that comes from knowing someone is always looking out

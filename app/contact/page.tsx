@@ -241,16 +241,16 @@ export default function ContactPage() {
                   <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#2A2A2A]">
                     <Info className="h-4 w-4 text-white" />
                   </div>
-                  <h3 className="font-serif text-lg font-semibold text-white">
+                  <h3 className="font-serif text-xl font-semibold text-white">
                     Important Compliance Notice
                   </h3>
                 </div>
-                <p className="mt-2 max-w-4xl text-xs leading-6 text-neutral-300">
+                <p className="mt-2 max-w-4xl text-md leading-6 text-neutral-300">
                   Heritage Wealth Advisors is committed to protecting your privacy and maintaining the highest standards of
                   professional conduct. Please note the following:
                 </p>
 
-                <ul className="mt-5 space-y-3 text-xs leading-6 text-neutral-200">
+                <ul className="mt-5 space-y-3 text-md leading-6 text-neutral-200">
                   <li className="flex gap-3">
                     <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
                     <span>
