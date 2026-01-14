@@ -21,9 +21,9 @@ export default function Home() {
         <WhoWeServeSection />
          <OurServicesSection />
          <OurProcessSection />
-        <IntroductionSection />    
         <MeetAdvisorSection />
         <CtaSection />
+        {/* <IntroductionSection />   */}
       </main>
       
       <Footer />
