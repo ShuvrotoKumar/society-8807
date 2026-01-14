@@ -15,7 +15,7 @@ export default function WhoWeServePage() {
             </h1>
             <div className="mx-auto mt-3 h-px w-16 bg-[#D4AF37]/80" />
 
-            <p className="mx-auto mt-8 max-w-3xl text-xs leading-6 text-neutral-400 sm:text-sm md:text-base">
+            <p className="mx-auto mt-8 max-w-3xl text-sm leading-6 text-neutral-400 md:text-base">
               We partner with clients navigating complex financial decisions—professionals,
               families, and business owners—who value independent guidance and a long-term
               approach.
@@ -34,10 +34,10 @@ export default function WhoWeServePage() {
             <h2 className="font-serif text-3xl font-medium text-[#C9A961]">Enterprise Organizations</h2>
             <div className="mt-5 h-px w-16 bg-[#C9A961]/70" />
 
-            <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3">
+            <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-x-32">
               <div>
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#C9A961]">Challenges</p>
-                <ul className="mt-5 space-y-4 text-xs leading-6 text-neutral-200">
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Challenges</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
                   <li className="flex gap-3">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>
@@ -66,8 +66,8 @@ export default function WhoWeServePage() {
               </div>
 
               <div>
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#C9A961]">Planning Considerations</p>
-                <ul className="mt-5 space-y-4 text-xs leading-6 text-neutral-200">
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Planning Considerations</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
                   <li className="flex gap-3">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>
@@ -96,8 +96,8 @@ export default function WhoWeServePage() {
               </div>
 
               <div>
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#C9A961]">Relevant Services</p>
-                <ul className="mt-5 space-y-4 text-xs leading-6 text-neutral-200">
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Relevant Services</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
                   <li className="flex gap-3">
                     <span className="mt-2 text-[#C9A961]">→</span>
                     <span>Digital Transformation Strategy</span>
@@ -129,10 +129,10 @@ export default function WhoWeServePage() {
             <h2 className="font-serif text-3xl font-medium text-[#C9A961]">Growth-Stage Companies</h2>
             <div className="mt-5 h-px w-16 bg-[#C9A961]/70" />
 
-            <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3">
+            <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-x-32">
               <div>
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#C9A961]">Challenges</p>
-                <ul className="mt-5 space-y-4 text-xs leading-6 text-neutral-200">
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Challenges</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
                   <li className="flex gap-3">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>
@@ -161,8 +161,8 @@ export default function WhoWeServePage() {
               </div>
 
               <div>
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#C9A961]">Planning Considerations</p>
-                <ul className="mt-5 space-y-4 text-xs leading-6 text-neutral-200">
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Planning Considerations</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
                   <li className="flex gap-3">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>
@@ -191,8 +191,198 @@ export default function WhoWeServePage() {
               </div>
 
               <div>
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#C9A961]">Relevant Services</p>
-                <ul className="mt-5 space-y-4 text-xs leading-6 text-neutral-200">
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Relevant Services</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>Digital Transformation Strategy</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>Organizational Restructuring</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>M&amp;A Strategy &amp; Integration</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>Global Market Expansion</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>Performance Optimization</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-px w-full bg-[#C9A961]/25" />
+
+          <div className="mx-auto max-w-6xl px-6 py-14">
+            <h2 className="font-serif text-3xl font-medium text-[#C9A961]">Nonprofit &amp; Social Impact</h2>
+            <div className="mt-5 h-px w-16 bg-[#C9A961]/70" />
+
+            <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-x-32">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Challenges</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Aligning mission priorities with sustainable funding and long-term financial resilience
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Managing governance expectations while communicating impact to donors and stakeholders
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Balancing program expansion with operational capacity and risk controls
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Maintaining transparency and compliance across grants, reporting, and regulatory needs
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Planning Considerations</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Multi-year funding models and scenario planning for donor and grant volatility
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Board alignment sessions and governance operating model refinement
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Impact measurement frameworks with clear KPIs and reporting cadence
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Risk management policies for operations, reputation, and compliance
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Relevant Services</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>Digital Transformation Strategy</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>Organizational Restructuring</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>M&amp;A Strategy &amp; Integration</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>Global Market Expansion</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 text-[#C9A961]">→</span>
+                    <span>Performance Optimization</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-px w-full bg-[#C9A961]/25" />
+
+          <div className="mx-auto max-w-6xl px-6 py-14">
+            <h2 className="font-serif text-3xl font-medium text-[#C9A961]">Family Offices &amp; Private Equity</h2>
+            <div className="mt-5 h-px w-16 bg-[#C9A961]/70" />
+
+            <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-x-32">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Challenges</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Coordinating multi-entity structures while maintaining strong governance and oversight
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Managing liquidity planning across investments, distributions, and capital calls
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Integrating reporting across public/private assets with consistent performance measurement
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Balancing risk controls with long-term growth objectives and family priorities
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Planning Considerations</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Governance model design (committees, investment policy statements, decision rights)
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Multi-year liquidity and cash flow forecasting for complex portfolios
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Operating model optimization for reporting, controls, and vendor management
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A961]" />
+                    <span>
+                      Scenario planning for market drawdowns and private market valuation shifts
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#C9A961]">Relevant Services</p>
+                <ul className="mt-5 space-y-4 text-base leading-6 text-neutral-200">
                   <li className="flex gap-3">
                     <span className="mt-2 text-[#C9A961]">→</span>
                     <span>Digital Transformation Strategy</span>
@@ -218,7 +408,8 @@ export default function WhoWeServePage() {
             </div>
           </div>
         </section>
-
+        {/*cta section*/}
+        
       </main>
       <Footer />
     </div>
