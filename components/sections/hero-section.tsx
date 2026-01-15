@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative bg-[#1A1A1A] min-h-[60vh] flex items-center py-20" style={{ fontFamily: 'Playfair Display, serif' }}>
+    <section className="relative bg-[#1a1a1a] min-h-[60vh] flex items-center py-20" style={{ fontFamily: 'Playfair Display, serif' }}>
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.06] text-white" style={{ fontFamily: 'Playfair Display, serif' }}>
