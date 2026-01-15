@@ -119,8 +119,8 @@ export const Footer: React.FC = () => {
           </p>
 
           <div className="mt-8 flex items-center justify-center gap-8 text-[11px]">
-            <a href="#" className="text-[#D4AF37] hover:text-[#E7C55A] transition-colors">BrokerCheck</a>
-            <a href="#" className="text-[#D4AF37] hover:text-[#E7C55A] transition-colors">Form CRS</a>
+            <a href="/brokercheck" className="text-[#D4AF37] hover:text-[#E7C55A] transition-colors">BrokerCheck</a>
+            <a href="/crs" className="text-[#D4AF37] hover:text-[#E7C55A] transition-colors">Form CRS</a>
           </div>
         </div>
 
