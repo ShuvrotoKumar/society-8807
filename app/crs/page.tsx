@@ -38,14 +38,14 @@ export default function CrsPage() {
             <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
               <div className="px-8 py-10">
                 <h2 className="font-serif text-2xl font-semibold text-neutral-900">Understanding Form CRS</h2>
-                <p className="mt-2 text-xs leading-6 text-neutral-600">
+                <p className="mt-2 text-md leading-6 text-neutral-600">
                   The Form CRS provides essential information about our firm&apos;s services, fees, and conflicts of interest. Please read carefully.
                 </p>
-                <p className="mt-4 text-xs leading-6 text-neutral-600">
+                <p className="mt-4 text-md leading-6 text-neutral-600">
                   This standardized form is designed to help you make informed decisions about whether to engage our services as a client.
                 </p>
 
-                <ul className="mt-6 space-y-3 text-xs leading-6 text-neutral-700">
+                <ul className="mt-6 space-y-3 text-md leading-6 text-neutral-700">
                   <li className="flex gap-3">
                     <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
                     <span>The types of services we offer</span>
@@ -71,14 +71,14 @@ export default function CrsPage() {
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                   <a
                     href="#"
-                    className="inline-flex h-10 items-center gap-2 rounded-md bg-[#D4AF37] px-5 text-[12px] font-semibold text-black transition-colors hover:bg-[#B99225]"
+                    className="inline-flex h-10 items-center gap-2 rounded-md bg-[#D4AF37] px-5 text-[16px] font-semibold text-black transition-colors hover:bg-[#B99225]"
                   >
                     <Download className="h-4 w-4" />
                     Download Full Form CRS
                   </a>
                   <a
                     href="#document"
-                    className="inline-flex h-10 items-center justify-center rounded-md border border-black/20 bg-white px-5 text-[12px] font-semibold text-neutral-900 transition-colors hover:bg-black/5"
+                    className="inline-flex h-10 items-center justify-center rounded-md border border-black/20 bg-white px-5 text-[16px] font-semibold text-neutral-900 transition-colors hover:bg-black/5"
                   >
                     View Online
                   </a>
@@ -86,30 +86,31 @@ export default function CrsPage() {
               </div>
             </div>
 
-            <div className="mt-10 text-center">
-              <h3 className="font-serif text-xl font-semibold text-neutral-900">Form CRS Document</h3>
-            </div>
-
-            <div id="document" className="mt-6 overflow-hidden rounded-2xl bg-[#F7F7F7] shadow-sm ring-1 ring-black/5">
-              <div className="px-8 py-12 text-center">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#1a1a1a]">
-                  <FileText className="h-5 w-5 text-[#D4AF37]" />
-                </div>
-                <h4 className="mt-6 font-serif text-lg font-semibold text-neutral-900">PDF Document Viewer</h4>
-                <p className="mx-auto mt-3 max-w-md text-xs leading-6 text-neutral-600">
-                  A button below to view the complete Form CRS document in your browser.
-                </p>
-
-                <div className="mt-8">
-                  <a
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-[#111111] px-6 text-[12px] font-semibold text-white transition-colors hover:bg-black"
-                  >
-                    Load PDF Document
-                  </a>
+            <section className="bg-[#f3f0e7] py-16">
+              <h2 className="font-serif text-2xl font-semibold text-neutral-900 text-center mb-4">Form CRS Document</h2>
+              <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div className="rounded-lg bg-[#F6F2E8] p-8 text-center shadow-sm ring-1 ring-black/5">
+                 
+                  <div className="mt-8 flex justify-center">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#121417] ring-1 ring-black/5">
+                      <FileText className="h-8 w-8 text-[#D4AF37]" />
+                    </div>
+                  </div>
+                  <h3 className="mt-4 font-serif text-xl font-semibold text-neutral-900">PDF Document Viewer</h3>
+                  <p className="mt-2 text-sm leading-6 text-neutral-600">
+                    A button below to view the complete Form CRS document in your browser.
+                  </p>
+                  <div className="mt-8">
+                    <a
+                      href="#"
+                      className="inline-flex h-10 items-center gap-3 rounded-md bg-[#121417] px-6 text-[12px] font-semibold text-[#D4AF37] transition-colors hover:bg-[#2A2A2A]"
+                    >
+                      Load PDF Document
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
         </section>
 

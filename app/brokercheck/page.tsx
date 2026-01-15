@@ -7,7 +7,7 @@ const cards = [
   {
     title: 'Registration Status',
     description:
-      'Verify that our firm and advisors are properly registered and I',
+      'Verify that our firm and advisors are properly registered and licensed.',
     Icon: BadgeCheck,
   },
   {
@@ -77,14 +77,14 @@ export default function BrokerCheckPage() {
 
             <div className="mt-12  grid grid-cols-1 gap-6 sm:grid-cols-2">
               {cards.map(({ title, description, Icon }) => (
-                <div key={title} className="bg-white px-8 py-8 shadow-sm ring-1 ring-black/5 h-[160px]">
+                <div key={title} className="bg-white px-8 py-20 shadow-sm ring-1 ring-black/5 h-[160px] rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105">
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 items-center justify-center bg-[#F6F2E8] ring-1 ring-black/5">
                       <Icon className="h-5 w-5 text-[#A47B22]" />
                     </div>
                     <div className="min-w-0">
-                      <h3 className="font-serif text-base font-semibold text-neutral-900">{title}</h3>
-                      <p className="mt-2 text-xs leading-6 text-neutral-600">{description}</p>
+                      <h3 className="font-serif text-lg font-semibold text-neutral-900">{title}</h3>
+                      <p className="mt-2 text-md leading-6 text-neutral-600">{description}</p>
                     </div>
                   </div>
                 </div>
