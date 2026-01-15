@@ -44,13 +44,13 @@ export const Footer: React.FC = () => {
                 <a href="/disclosures" className="text-neutral-300 hover:text-white transition-colors">Disclosures</a>
               </li>
               <li>
-                <a href="#" className="text-neutral-300 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="/privacy" className="text-neutral-300 hover:text-white transition-colors">Privacy Policy</a>
               </li>
               <li>
-                <a href="#" className="text-neutral-300 hover:text-white transition-colors">Terms of Use</a>
+                <a href="/terms" className="text-neutral-300 hover:text-white transition-colors">Terms of Use</a>
               </li>
               <li>
-                <a href="#" className="text-neutral-300 hover:text-white transition-colors">Cookie Policy</a>
+                <a href="/cookie" className="text-neutral-300 hover:text-white transition-colors">Cookie Policy</a>
               </li>
             </ul>
           </div>

@@ -1,88 +1,79 @@
 import React from 'react';
+import Link from 'next/link';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-import { ShieldCheck, Cookie, Lock, User, Mail } from 'lucide-react';
+import { ScrollText, ShieldCheck, AlertTriangle, Scale, Mail, ExternalLink } from 'lucide-react';
 
-const sections = [
+const termsSections = [
   {
-    id: 'overview',
-    title: 'Overview',
+    id: 'acceptance',
+    title: 'Acceptance of These Terms',
+    Icon: ScrollText,
+    body: [
+      'By accessing or using this website, you agree to be bound by these Terms of Use. If you do not agree, do not use the site.',
+      'We may update these Terms from time to time. Continued use of the website after changes are posted constitutes acceptance of the revised Terms.',
+    ],
+  },
+  {
+    id: 'no-advice',
+    title: 'No Investment, Tax, or Legal Advice',
     Icon: ShieldCheck,
     body: [
-      'This Privacy Policy explains how Society 8807 Wealth Management (“we,” “us,” or “our”) collects, uses, and shares information when you visit our website or communicate with us.',
-      'This website is intended for general informational purposes. We do not request sensitive personal or financial information through website forms.',
+      'Information on this website is provided for general educational and informational purposes only and should not be construed as personalized investment, tax, or legal advice.',
+      'You should consult qualified professionals regarding your specific circumstances before making financial decisions.',
     ],
   },
   {
-    id: 'information-we-collect',
-    title: 'Information We Collect',
-    Icon: User,
+    id: 'risks',
+    title: 'Risk Disclosures',
+    Icon: AlertTriangle,
     body: [
-      'Information you provide: such as your name, email address, phone number, and message content when you contact us.',
-      'Usage information: such as pages viewed, time spent on pages, browser type, device information, and approximate location (derived from IP address).',
-      'Cookies and similar technologies: used to help the site function, understand usage, and improve the user experience.',
+      'All investing involves risk, including the potential loss of principal. Past performance is not indicative of future results.',
+      'Any forward-looking statements are based on assumptions and may differ materially from actual outcomes.',
     ],
   },
   {
-    id: 'how-we-use',
-    title: 'How We Use Information',
-    Icon: ShieldCheck,
+    id: 'intellectual-property',
+    title: 'Intellectual Property',
+    Icon: Scale,
     body: [
-      'To respond to inquiries and provide requested information.',
-      'To operate, maintain, and improve our website and services.',
-      'To help protect against fraud, abuse, and security incidents.',
-      'To comply with applicable legal and regulatory obligations.',
+      'Unless otherwise noted, all content on this site (text, graphics, logos, and design) is owned by or licensed to Society 8807 Wealth Management and is protected by applicable laws.',
+      'You may view and print pages for your personal, non-commercial use. You may not reproduce, distribute, modify, or create derivative works without prior written permission.',
     ],
   },
   {
-    id: 'cookies',
-    title: 'Cookies & Analytics',
-    Icon: Cookie,
+    id: 'third-party',
+    title: 'Third-Party Links',
+    Icon: ExternalLink,
     body: [
-      'Cookies are small text files stored on your device. We may use cookies to remember preferences and to understand how visitors interact with our site.',
-      'You can manage cookies through your browser settings. Disabling cookies may impact certain site features.',
+      'This site may contain links to third-party websites. We do not control those sites and are not responsible for their content, policies, or practices.',
+      'Links are provided for convenience and do not imply endorsement.',
     ],
   },
   {
-    id: 'sharing',
-    title: 'Sharing of Information',
-    Icon: Lock,
+    id: 'limitations',
+    title: 'Disclaimers & Limitation of Liability',
+    Icon: AlertTriangle,
     body: [
-      'We do not sell your personal information. We may share information with service providers who perform services on our behalf (e.g., hosting, analytics), subject to appropriate safeguards.',
-      'We may also disclose information as required to comply with law, regulation, legal process, or governmental request, or to protect our rights and safety.',
-    ],
-  },
-  {
-    id: 'security',
-    title: 'Data Security',
-    Icon: Lock,
-    body: [
-      'We use reasonable administrative, technical, and physical safeguards designed to protect information we collect. However, no method of transmission or storage is 100% secure.',
-    ],
-  },
-  {
-    id: 'your-rights',
-    title: 'Your Choices & Rights',
-    Icon: User,
-    body: [
-      'You may request access, correction, or deletion of certain personal information by contacting us. We will respond in accordance with applicable law.',
-      'You may opt out of non-essential cookies through your browser settings.',
+      'This website is provided on an “as is” and “as available” basis, without warranties of any kind, either express or implied.',
+      'To the fullest extent permitted by law, Society 8807 Wealth Management will not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the site.',
     ],
   },
   {
     id: 'contact',
-    title: 'Contact Us',
+    title: 'Contact',
     Icon: Mail,
     body: [
-      'If you have questions about this Privacy Policy or how we handle information, contact us at contact@society8807.com.',
+      'Questions about these Terms? Contact us at contact@society8807.com.',
     ],
   },
 ];
 
-export default function PrivacyPage() {
+export default function TermsPage() {
   return (
     <div className="min-h-screen">
       <Header />
+
       <main>
         <section className="bg-gradient-to-b from-[#1A1D21] to-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
@@ -90,31 +81,31 @@ export default function PrivacyPage() {
               Legal
             </span>
             <h1 className="mt-6 font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#D4AF37]">
-              Privacy Policy
+              Terms of Use
             </h1>
             <p className="mx-auto mt-6 max-w-3xl text-sm leading-6 text-neutral-400">
-              We respect your privacy and are committed to protecting the information you share with us.
+              These Terms govern your access to and use of the Society 8807 Wealth Management website.
             </p>
 
             <div className="mx-auto mt-10 max-w-4xl rounded-2xl bg-white/5 px-6 py-6 text-left ring-1 ring-white/10 sm:px-8">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <a
-                  href="#information-we-collect"
+                  href="#no-advice"
                   className="rounded-xl bg-black/20 px-4 py-4 text-xs font-semibold text-neutral-200 ring-1 ring-white/10 transition-colors hover:bg-black/30"
                 >
-                  Data We Collect
+                  No Advice
                 </a>
                 <a
-                  href="#how-we-use"
+                  href="#intellectual-property"
                   className="rounded-xl bg-black/20 px-4 py-4 text-xs font-semibold text-neutral-200 ring-1 ring-white/10 transition-colors hover:bg-black/30"
                 >
-                  How We Use It
+                  IP & Content
                 </a>
                 <a
-                  href="#cookies"
+                  href="#third-party"
                   className="rounded-xl bg-black/20 px-4 py-4 text-xs font-semibold text-neutral-200 ring-1 ring-white/10 transition-colors hover:bg-black/30"
                 >
-                  Cookies
+                  Third-Party Links
                 </a>
                 <a
                   href="#contact"
@@ -131,7 +122,7 @@ export default function PrivacyPage() {
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_320px]">
               <div className="space-y-8">
-                {sections.map(({ id, title, Icon, body }) => (
+                {termsSections.map(({ id, title, Icon, body }) => (
                   <section
                     key={id}
                     id={id}
@@ -161,13 +152,20 @@ export default function PrivacyPage() {
                 <div className="mt-8 rounded-xl bg-[#1a1a1a] px-6 py-6 text-white">
                   <div className="flex items-center gap-3">
                     <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10">
-                      <ShieldCheck className="h-4 w-4 text-[#D4AF37]" />
+                      <AlertTriangle className="h-4 w-4 text-[#D4AF37]" />
                     </div>
-                    <p className="font-serif text-lg font-semibold">Important Note</p>
+                    <p className="font-serif text-lg font-semibold">Important</p>
                   </div>
                   <p className="mt-3 text-xs leading-6 text-neutral-300">
-                    Please do not submit confidential or account-specific information through website forms.
-                    For sensitive matters, schedule a consultation.
+                    For important regulatory information, please review our
+                    <Link href="/disclosures" className="ml-1 text-[#D4AF37] underline">
+                      Disclosures
+                    </Link>
+                    and
+                    <Link href="/privacy" className="ml-1 text-[#D4AF37] underline">
+                      Privacy Policy
+                    </Link>
+                    .
                   </p>
                 </div>
 
@@ -180,6 +178,7 @@ export default function PrivacyPage() {
           </div>
         </section>
       </main>
+
       <Footer />
     </div>
   );
