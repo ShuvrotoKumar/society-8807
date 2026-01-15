@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 export const HeroSection: React.FC = () => {
   return (
@@ -21,12 +22,14 @@ export const HeroSection: React.FC = () => {
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <Link href="/schedule">
           <Button
             variant="outline"
             className="px-8 py-3 border-2 border-[#C9A961] !bg-transparent hover:!bg-transparent text-white hover:text-[#d7be86] hover:border-[#C9A961] transition-colors duration-300 text-base focus:ring-0 focus:ring-offset-0"
           >
             Schedule a Consultation
           </Button>
+          </Link>
 
           <a
             href="#"

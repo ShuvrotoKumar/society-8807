@@ -225,15 +225,17 @@ export default function ContactPage() {
               </ul>
 
               <div className="mt-10 flex justify-center">
-                <Button className="h-10 rounded-md !bg-[#D4AF37] px-6 text-[12px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#D4AF37]">
-                  Connect Calendly
-                </Button>
+                <Link href="/schedule">
+                  <Button className="h-10 rounded-md !bg-[#D4AF37] px-6 text-[12px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#D4AF37]">
+                      Connect Calendly
+                    </Button>
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="bg-[#1a1a1a] px-4 pb-16">
+        <section className="bg-[#1a1a1a] px-4 p-16">
           <div className="mx-auto max-w-5xl">
             <div className="overflow-hidden rounded-xl bg-[#111111] shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
               <div className="px-8 py-7 sm:px-10 sm:py-8">

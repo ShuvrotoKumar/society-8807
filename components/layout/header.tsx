@@ -29,6 +29,7 @@ export const Header: React.FC = () => {
           
           {/* Buttons */}
           <div className="flex items-center space-x-3">
+            <Link href="/login">
             <Button 
               variant="outline" 
               className="border-[#C9A961] text-[#C9A961] hover:bg-[#C9A961] hover:text-[#121417] transition-all duration-300 px-6 py-2 rounded-md font-medium"
@@ -36,6 +37,8 @@ export const Header: React.FC = () => {
             >
               Log In
             </Button>
+            </Link>
+            <Link href="/register">
             <Button 
               variant="outline" 
               className="border-[#C9A961] bg-transparent text-[#C9A961] hover:bg-[#C9A961] hover:text-[#121417] transition-all duration-300 px-6 py-2 rounded-md font-medium"
@@ -43,12 +46,15 @@ export const Header: React.FC = () => {
             >
               Sign Up
             </Button>
-            <Button 
-              className="bg-gradient-to-r from-[#C9A961] to-[#B8B77A] text-white hover:from-[#B8B77A] hover:to-[#A89668] transition-all duration-300 px-6 py-2 rounded-md font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-              style={{ fontFamily: 'Playfair Display, serif' }}
-            >
-              Schedule Consultation
-            </Button>
+            </Link>
+            <Link href="/schedule">
+              <Button 
+                className="bg-gradient-to-r from-[#C9A961] to-[#B8B77A] text-white hover:from-[#B8B77A] hover:to-[#A89668] transition-all duration-300 px-6 py-2 rounded-md font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                style={{ fontFamily: 'Playfair Display, serif' }}
+              >
+                Schedule Consultation
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

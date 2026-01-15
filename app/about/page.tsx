@@ -1,6 +1,7 @@
 import React from 'react';
 import { Footer } from '@/components/layout/footer';
 import { Header } from '@/components/layout/header';
+import { CtaSection } from '@/components/sections/cta-section';
 import {
   BadgeDollarSign,
   FileText,
@@ -378,26 +379,7 @@ export default function AboutPage() {
           </div>
         </section>
         {/*CTA Section*/}
-        <section className="bg-[#1A1A1A] py-24">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="mx-auto max-w-3xl font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-[44px]">
-                Ready to begin your wealth management journey?
-              </h2>
-              <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-neutral-400 sm:text-[15px]">
-                Schedule a confidential consultation to discuss your financial goals and explore how we
-                <br />
-                can serve you
-              </p>
-
-              <div className="mt-10 flex justify-center">
-                <button className="h-12 w-[260px] rounded-[10px] !bg-[#D4AF37] text-[13px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#D4AF37]">
-                  Schedule a Consultation
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CtaSection/>
        </main>
 
       <Footer />

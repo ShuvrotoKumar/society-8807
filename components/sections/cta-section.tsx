@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 export const CtaSection: React.FC = () => {
   return (
@@ -16,9 +17,11 @@ export const CtaSection: React.FC = () => {
           </p>
 
           <div className="mt-10 flex justify-center">
+            <Link href="/schedule">
             <Button className="h-12 w-[260px] rounded-[10px] !bg-[#D4AF37] text-[13px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#D4AF37]">
               Schedule a Consultation
             </Button>
+            </Link>
           </div>
         </div>
       </div>
