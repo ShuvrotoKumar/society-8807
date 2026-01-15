@@ -51,7 +51,13 @@ export const Header: React.FC = () => {
             </Button>
           </div>
         </div>
+        
       </div>
+      <div className="pt-0 pb-16">
+            <div className="max-w-6xl mx-auto px-6">
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#C9A961] to-transparent opacity-80" />
+            </div>
+          </div>
     </header>
   );
 };
