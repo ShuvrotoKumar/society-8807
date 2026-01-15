@@ -117,21 +117,21 @@ export default function CrsPage() {
         <section className="bg-[#121417] py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
             <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10">
-              <ShieldCheck className="h-5 w-5 text-[#D4AF37]" />
+              <ShieldCheck className="h-8 w-8 text-[#D4AF37]" />
             </div>
             <h3 className="mt-6 font-serif text-2xl font-semibold text-white">Regulatory Compliance</h3>
-            <p className="mx-auto mt-3 max-w-3xl text-xs leading-6 text-neutral-300">
+            <p className="mx-auto mt-3 max-w-3xl text-md leading-6 text-neutral-300">
               This document is required by the SEC. The information provided is meant to ensure transparency in our relationship with you.
               Please contact us with any questions.
             </p>
 
             <div className="mt-10">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-neutral-400">Additional Resources</p>
+              <p className="text-[14px] font-semibold uppercase tracking-[0.22em] text-neutral-400">Additional Resources</p>
               <a
                 href="https://www.investor.gov/crs"
                 target="_blank"
                 rel="noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-[#D4AF37] hover:text-[#E7C55A]"
+                className="mt-4 inline-flex items-center gap-2 text-md font-semibold text-[#D4AF37] hover:text-[#E7C55A]"
               >
                 Visit the SEC&apos;s Form CRS page for more details
                 <ExternalLink className="h-4 w-4" />
@@ -141,13 +141,13 @@ export default function CrsPage() {
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-[#D4AF37] px-6 text-[12px] font-semibold text-black transition-colors hover:bg-[#B99225]"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-[#D4AF37] px-6 text-[14px] font-semibold text-black transition-colors hover:bg-[#B99225]"
               >
                 Contact Our Team
               </Link>
               <Link
                 href="/schedule"
-                className="inline-flex h-10 items-center justify-center rounded-md border border-white/15 bg-white/5 px-6 text-[12px] font-semibold text-white transition-colors hover:bg-white/10"
+                className="inline-flex h-10 items-center justify-center rounded-md border border-white/15 bg-white/5 px-6 text-[14px] font-semibold text-white transition-colors hover:bg-white/10"
               >
                 Schedule Consultation
               </Link>

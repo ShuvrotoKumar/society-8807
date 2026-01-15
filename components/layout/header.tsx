@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
             </Link>
             <Link href="/schedule">
               <Button 
-                className="bg-gradient-to-r from-[#C9A961] to-[#B8B77A] text-white hover:from-[#B8B77A] hover:to-[#A89668] transition-all duration-300 px-6 py-2 rounded-md font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="bg-gradient-to-r from-[#C9A961] to-[#B8B77A] !text-lg text-white hover:from-[#B8B77A] hover:to-[#A89668] transition-all duration-300 px-6 py-2 rounded-md font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 style={{ fontFamily: 'Playfair Display, serif' }}
               >
                 Schedule Consultation
