@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-import { ExternalLink, BadgeCheck, GraduationCap, Briefcase, Scale, Check } from 'lucide-react';
+import { ExternalLink, BadgeCheck, GraduationCap, Briefcase, Scale, Check, CheckCheck } from 'lucide-react';
 
 const cards = [
   {
@@ -61,7 +61,7 @@ export default function BrokerCheckPage() {
           </div>
         </section>
 
-        <section className="bg-[#F3F0E7] py-16">
+        <section className="bg-[#F7F5F0] py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="flex items-start gap-4">
               <div className="flex h-10 w-10 items-center justify-center bg-[#D4AF37]">
@@ -91,11 +91,11 @@ export default function BrokerCheckPage() {
               ))}
             </div>
 
-            <div className="mt-12 overflow-hidden bg-[#111315] shadow-sm">
+            <div className="mt-12 overflow-hidden rounded-2xl bg-[#f3f0e7] shadow-lg ring-1 ring-black/10">
               <div className="grid grid-cols-1 items-stretch gap-0 lg:grid-cols-[1fr_200px]">
-                <div className="px-8 py-10 text-white">
-                  <h3 className="font-serif text-xl font-semibold">Why Verify Credentials?</h3>
-                  <p className="mt-3 max-w-2xl text-xs leading-6 text-neutral-300">
+                <div className="px-8 py-10 text-neutral-900">
+                  <h3 className="font-serif text-2xl font-semibold text-neutral-900">Why Verify Credentials?</h3>
+                  <p className="mt-3 max-w-2xl text-xs leading-6 text-neutral-700">
                     Transparency and trust are the foundations of our relationship with clients. We encourage every investor to do their due diligence and understand who they're working with.
                   </p>
 
@@ -104,7 +104,7 @@ export default function BrokerCheckPage() {
                       href="https://brokercheck.finra.org/"
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-xs font-semibold text-[#D4AF37] hover:text-[#E7C55A]"
+                      className="inline-flex items-center gap-2 text-xs font-semibold text-[#A47B22] hover:text-[#8D6A1D]"
                     >
                       Visit FINRA's BrokerCheck
                       <ExternalLink className="h-4 w-4" />
@@ -112,9 +112,9 @@ export default function BrokerCheckPage() {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-center bg-[#15181C] px-8 py-10">
-                  <div className="flex h-16 w-16 items-center justify-center bg-[#0F1114] ring-1 ring-white/10">
-                    <Check className="h-8 w-8 text-[#D4AF37]" />
+                <div className="flex items-center justify-center bg-white/60 px-8 py-10 ring-1 ring-black/10 lg:ring-0">
+                  <div className="flex h-24 w-24 items-center justify-center bg-white ring-1 ring-black/10">
+                    <CheckCheck className="h-10 w-10 text-[#D4AF37]" />
                   </div>
                 </div>
               </div>
