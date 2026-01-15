@@ -7,7 +7,7 @@ const cards = [
   {
     title: 'Registration Status',
     description:
-      'Verify that our firm and advisors are properly registered and licensed.',
+      'Verify that our firm and advisors are properly registered and I',
     Icon: BadgeCheck,
   },
   {
@@ -61,7 +61,7 @@ export default function BrokerCheckPage() {
           </div>
         </section>
 
-        <section className="bg-[#F7F5F0] py-16">
+        <section className="bg-[#f3f0e7] py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="flex items-start gap-4">
               <div className="flex h-10 w-10 items-center justify-center bg-[#D4AF37]">
@@ -75,9 +75,9 @@ export default function BrokerCheckPage() {
               </div>
             </div>
 
-            <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div className="mt-12  grid grid-cols-1 gap-6 sm:grid-cols-2">
               {cards.map(({ title, description, Icon }) => (
-                <div key={title} className="bg-white px-8 py-8 shadow-sm ring-1 ring-black/5">
+                <div key={title} className="bg-white px-8 py-8 shadow-sm ring-1 ring-black/5 h-[160px]">
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 items-center justify-center bg-[#F6F2E8] ring-1 ring-black/5">
                       <Icon className="h-5 w-5 text-[#A47B22]" />
@@ -91,11 +91,14 @@ export default function BrokerCheckPage() {
               ))}
             </div>
 
-            <div className="mt-12 overflow-hidden rounded-2xl bg-[#f3f0e7] shadow-lg ring-1 ring-black/10">
-              <div className="grid grid-cols-1 items-stretch gap-0 lg:grid-cols-[1fr_200px]">
-                <div className="px-8 py-10 text-neutral-900">
-                  <h3 className="font-serif text-2xl font-semibold text-neutral-900">Why Verify Credentials?</h3>
-                  <p className="mt-3 max-w-2xl text-xs leading-6 text-neutral-700">
+            <div
+              className="mt-12 overflow-hidden rounded-2xl shadow-lg ring-1 ring-black/10"
+              style={{ backgroundColor: '#121417' }}
+            >
+              <div className="grid grid-cols-[1fr_140px] items-stretch gap-0 sm:grid-cols-[1fr_220px] lg:grid-cols-[1fr_320px]">
+                <div className="px-8 py-10 text-neutral-900" style={{ backgroundColor: '#121417' }}>
+                  <h3 className="font-serif text-2xl font-semibold text-gray-100">Why Verify Credentials?</h3>
+                  <p className="mt-3 max-w-2xl text-md leading-6 text-neutral-300">
                     Transparency and trust are the foundations of our relationship with clients. We encourage every investor to do their due diligence and understand who they're working with.
                   </p>
 
@@ -104,16 +107,19 @@ export default function BrokerCheckPage() {
                       href="https://brokercheck.finra.org/"
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-xs font-semibold text-[#A47B22] hover:text-[#8D6A1D]"
+                      className="inline-flex items-center mt-12 text-xl gap-2  font-semibold text-[#A47B22] hover:text-[#8D6A1D]"
                     >
                       Visit FINRA's BrokerCheck
-                      <ExternalLink className="h-4 w-4" />
+                      <ExternalLink className="h-7 w-7" />
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-center justify-center bg-white/60 px-8 py-10 ring-1 ring-black/10 lg:ring-0">
-                  <div className="flex h-24 w-24 items-center justify-center bg-white ring-1 ring-black/10">
+                <div
+                  className="flex items-center justify-center px-20 py-20 sm:px-8"
+                  style={{ backgroundColor: '' }}
+                >
+                  <div className="flex h-40 w-40 items-center justify-center bg-[#2A2A2A] ring-1 ring-black/10">
                     <CheckCheck className="h-10 w-10 text-[#D4AF37]" />
                   </div>
                 </div>
