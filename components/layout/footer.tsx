@@ -108,12 +108,12 @@ export const Footer: React.FC = () => {
         <div className="mt-12 border-t border-[#C9A961]/30" />
 
         <div className="mx-auto mt-10 max-w-5xl text-center">
-          <p className="text-xs leading-6 text-neutral-500">
+          <p className="text-sm leading-6 text-neutral-400">
             Securities offered through LPL Financial, Member FINRA/SIPC. Investment advice offered through Society 8807 Wealth Management, a registered investment
             advisor and separate entity from LPL Financial. The LPL Financial representatives associated with this website may discuss investment advisory services
             only with residents of the states in which they are properly registered or licensed.
           </p>
-          <p className="mt-5 text-xs leading-6 text-neutral-500">
+          <p className="mt-5 text-sm leading-6 text-neutral-400">
             This material was prepared by LPL Financial nor its registered representatives offer tax or legal advice. Always consult a qualified tax
             advisor for information as to how taxes may affect your particular situation.
           </p>
@@ -125,7 +125,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="mt-10 border-t border-white/5 pt-6">
-          <p className="text-center text-xs text-neutral-500">© 2026 Society 8807 Wealth Management. All rights reserved.</p>
+          <p className="text-center text-xs text-neutral-500">© 2026 Society 8807. All rights reserved.</p>
         </div>
       </div>
     </footer>

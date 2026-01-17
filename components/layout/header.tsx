@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
           <div className="flex items-center">
             <Link href="/">
               <img 
-                src="images/logo.png" 
+                src="/images/logo.png" 
                 alt="Society Max" 
                 className="h-8 w-auto mr-2"
               />
