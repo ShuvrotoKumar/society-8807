@@ -1,8 +1,14 @@
-import React from "react";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { insights } from "@/lib/insights";
+
+export async function generateStaticParams() {
+  return insights.map((insight) => ({
+    slug: insight.slug,
+  }));
+}
 
 type PageProps = {
   params: { slug: string };

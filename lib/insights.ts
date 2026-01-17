@@ -1,4 +1,5 @@
 export type Insight = {
+  slug: string;
   title: string;
   date: string;
   readTime: string;
@@ -9,6 +10,7 @@ export type Insight = {
 
 export const insights: Insight[] = [
   {
+    slug: "market-volatility",
     title: "Market Volatility: Navigating Uncertain Times",
     date: "January 15, 2025",
     readTime: "5 min read",
@@ -18,6 +20,7 @@ export const insights: Insight[] = [
     href: "/insights/market-volatility",
   },
   {
+    slug: "esg-investing",
     title: "ESG Investing: The Future of Sustainable Finance",
     date: "January 13, 2025",
     readTime: "5 min read",
@@ -28,6 +31,7 @@ export const insights: Insight[] = [
     href: "/insights/esg-investing",
   },
   {
+    slug: "retirement-planning",
     title: "Retirement Planning in Your 40s and 50s",
     date: "January 7, 2025",
     readTime: "5 min read",
@@ -38,6 +42,7 @@ export const insights: Insight[] = [
     href: "/insights/retirement-planning",
   },
   {
+    slug: "digital-assets",
     title: "Digital Assets: Understanding Crypto in Your Portfolio",
     date: "January 4, 2025",
     readTime: "5 min read",
@@ -48,6 +53,7 @@ export const insights: Insight[] = [
     href: "/insights/digital-assets",
   },
   {
+    slug: "digital-assets-2",
     title: "Digital Assets: Understanding Crypto in Your Portfolio",
     date: "January 4, 2025",
     readTime: "5 min read",
@@ -58,6 +64,7 @@ export const insights: Insight[] = [
     href: "/insights/digital-assets-2",
   },
   {
+    slug: "international-diversification",
     title: "International Diversification: Going Global",
     date: "January 7, 2025",
     readTime: "5 min read",
@@ -67,6 +74,7 @@ export const insights: Insight[] = [
     href: "/insights/international-diversification",
   },
   {
+    slug: "reits-primer",
     title: "Real Estate Investment Trusts: A Primer",
     date: "January 15, 2025",
     readTime: "5 min read",
@@ -77,6 +85,7 @@ export const insights: Insight[] = [
     href: "/insights/reits-primer",
   },
   {
+    slug: "reits-primer-2",
     title: "Real Estate Investment Trusts: A Primer",
     date: "January 15, 2025",
     readTime: "5 min read",
@@ -87,6 +96,7 @@ export const insights: Insight[] = [
     href: "/insights/reits-primer-2",
   },
   {
+    slug: "psychology-of-investing",
     title: "The Psychology of Investing: Avoiding Common Biases",
     date: "January 5, 2025",
     readTime: "5 min read",

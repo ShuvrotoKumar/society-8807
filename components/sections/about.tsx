@@ -5,7 +5,7 @@ export const AboutSection: React.FC = () => {
     <>
       <section className="bg-gradient-to-b from-[#1A1A1A] to-[#222222]">
         {/* Divider */}
-        <div className="pt-0 pb-16">
+        <div className="pt-0 pb-16 ">
           <div className="max-w-6xl mx-auto px-6">
             <div className="h-px w-full bg-gradient-to-r from-transparent via-[#C9A961] to-transparent opacity-80" />
           </div>

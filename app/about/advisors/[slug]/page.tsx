@@ -4,12 +4,17 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { advisors } from "@/lib/advisors";
 
+export async function generateStaticParams() {
+  return advisors.map((advisor) => ({
+    slug: advisor.id.toString(),
+  }));
+}
+
 type PageProps = {
   params: { slug: string };
 };
 
 export default function AdvisorDetailPage({ params }: PageProps) {
-  console.log("DEBUG params.slug:", params.slug);
   const rawId = decodeURIComponent(params.slug ?? "").trim();
   const id = parseInt(rawId, 10);
 
