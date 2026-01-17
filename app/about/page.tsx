@@ -358,7 +358,7 @@ export default function AboutPage() {
 
             <div className="mt-12 space-y-4">
               {clientExperience.map(({ title, description, Icon }) => (
-                <div key={title} className="bg-[#2A2A2A] px-6 py-6 shadow-sm ring-1 ring-white/5">
+                <div key={title} className="bg-[#2A2A2A] px-6 py-6 shadow-sm ring-1 ring-white/5  transition-all duration-300 transform hover:scale-105">
                   <div className="flex gap-4">
                     <div className="relative shrink-0">
                       <div className="absolute left-0 top-0 h-full w-1 bg-[#C9A961]" />
