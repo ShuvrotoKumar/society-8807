@@ -125,7 +125,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="mt-10 border-t border-white/5 pt-6">
-          <p className="text-center text-xs text-neutral-500">© 2026 Society 8807. All rights reserved.</p>
+          <p className="text-center text-xs text-neutral-500">© {new Date().getFullYear()} Society 8807. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import "./globals.css";
 import favicon from "./favicon.png";
 
 export const metadata: Metadata = {
-  title: "Society 8807",
+  title: "Society-8807",
   description: "Professional wealth management services",
   icons: {
     icon: favicon.src,
