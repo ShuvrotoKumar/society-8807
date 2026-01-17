@@ -31,14 +31,14 @@ export const HeroSection: React.FC = () => {
           </Button>
           </Link>
 
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 text-[#C9A961] hover:text-[#d7be86] transition-colors text-sm sm:text-base"
+          <Link href="/contact">
+            <span className="inline-flex items-center gap-2 text-[#C9A961] hover:text-[#d7be86] transition-colors text-sm sm:text-base"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
             Learn Our Approach
             <span aria-hidden>→</span>
-          </a>
+          </span>
+          </Link>
         </div>
       </div>
       
