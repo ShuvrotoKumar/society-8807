@@ -5,6 +5,7 @@ import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import Swal from 'sweetalert2'
 
 const SchedulePage = () => {
   const [selectedDate, setSelectedDate] = useState(14)
@@ -47,18 +48,40 @@ const SchedulePage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
-    const confirmationMessage = `Confirm your appointment:\n\nDate: January ${selectedDate}, 2025\nTime: ${selectedTime}\nName: ${formData.fullName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nPurpose: ${formData.consultationPurpose}\nMeeting: ${formData.meetingPreference === 'virtual' ? 'Virtual Meeting' : formData.meetingPreference === 'phone' ? 'Phone Call' : 'In-Person Meeting'}\n\nProceed to confirm?`
-    
-    if (window.confirm(confirmationMessage)) {
-      console.log('Appointment confirmed:', {
-        date: selectedDate,
-        time: selectedTime,
-        ...formData
-      })
-      alert('Appointment confirmed successfully! We will send you a confirmation email shortly.')
-    } else {
-      console.log('Appointment cancelled by user')
-    }
+    Swal.fire({
+      title: 'Confirm Appointment',
+      html: `<div style="text-align: left;">
+        <p><strong>Date:</strong> January ${selectedDate}, 2025</p>
+        <p><strong>Time:</strong> ${selectedTime}</p>
+        <p><strong>Name:</strong> ${formData.fullName}</p>
+        <p><strong>Email:</strong> ${formData.email}</p>
+        <p><strong>Phone:</strong> ${formData.phone}</p>
+        <p><strong>Purpose:</strong> ${formData.consultationPurpose}</p>
+        <p><strong>Meeting:</strong> ${formData.meetingPreference === 'virtual' ? 'Virtual Meeting' : formData.meetingPreference === 'phone' ? 'Phone Call' : 'In-Person Meeting'}</p>
+      </div>`,
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#C9A961',
+      cancelButtonColor: '#6b7280',
+      confirmButtonText: 'Confirm',
+      cancelButtonText: 'Cancel'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        console.log('Appointment confirmed:', {
+          date: selectedDate,
+          time: selectedTime,
+          ...formData
+        })
+        Swal.fire({
+          title: 'Confirmed!',
+          text: 'Appointment confirmed successfully! We will send you a confirmation email shortly.',
+          icon: 'success',
+          confirmButtonColor: '#C9A961'
+        })
+      } else {
+        console.log('Appointment cancelled by user')
+      }
+    })
   }
 
   return (
