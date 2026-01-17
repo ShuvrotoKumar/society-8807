@@ -29,7 +29,7 @@ export default function InsightsPage() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5"
+                  className="group overflow-hidden rounded-2xl bg-[#e8e6e3] shadow-sm ring-1 ring-black/5"
                 >
                   <div className="h-40 w-full overflow-hidden">
                     <img
@@ -39,7 +39,7 @@ export default function InsightsPage() {
                     />
                   </div>
 
-                  <div className="px-5 pb-6 pt-4 text-[#e8e6e3]">
+                  <div className="px-5 pb-6 pt-4 bg-[#e8e6e3]">
                     <div className="text-[11px] text-neutral-500">
                       <span>{item.date}</span>
                       <span className="px-2">•</span>
