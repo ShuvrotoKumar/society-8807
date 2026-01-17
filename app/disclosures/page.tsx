@@ -147,14 +147,14 @@ export default function DisclosuresPage() {
 
                   <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <a
-                      href="#"
+                      href="/brokercheck"
                       className="group flex items-center justify-between rounded-xl bg-white/5 px-5 py-4 ring-1 ring-white/10 transition-colors hover:bg-white/10"
                     >
                       <span className="text-sm font-semibold text-[#C9A961]">BrokerCheck</span>
                       <ExternalLink className="h-4 w-4 text-neutral-200 transition-transform group-hover:translate-x-0.5" />
                     </a>
                     <a
-                      href="#"
+                      href="/crs"
                       className="group flex items-center justify-between rounded-xl bg-white/5 px-5 py-4 ring-1 ring-white/10 transition-colors hover:bg-white/10"
                     >
                       <span className="text-sm font-semibold text-[#C9A961]">Form CRS</span>

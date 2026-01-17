@@ -9,9 +9,9 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
           <div className="md:col-span-3">
             <Link href="/">
-              <Image src="/images/logo.png" alt="Society 8807" width={128} height={128} />
+              <Image src="/images/logo.png" alt="Society 8807" width={170} height={170} />
             </Link>
-            <p className="mt-5 max-w-sm text-sm leading-6 text-neutral-400">
+            <p className="mt-5 max-w-sm text-md leading-6 text-neutral-400">
               Independent, fiduciary-focused wealth management and financial planning.
             </p>
           </div>
