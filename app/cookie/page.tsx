@@ -13,7 +13,7 @@ const sections = [
       'This Cookie Policy explains how Society 8807 Wealth Management uses cookies and similar technologies when you visit our website.',
       'Cookies help us deliver a better experience, understand website usage, and improve performance. Some cookies are necessary for the site to function.',
     ],
-  },
+  }, 
   {
     id: 'what-are-cookies',
     title: 'What Are Cookies?',

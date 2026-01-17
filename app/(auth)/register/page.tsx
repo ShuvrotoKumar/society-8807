@@ -46,6 +46,19 @@ export default function RegisterPage() {
               />
             </div>
 
+            <div>
+              <label htmlFor="phone" className="block text-xs font-semibold tracking-wide text-neutral-700">
+                Phone Number
+              </label>
+              <input
+                id="phone"
+                type="tel"
+                autoComplete="tel"
+                placeholder="Enter your phone number"
+                className="mt-2 block h-11 w-full rounded-md border border-neutral-300 bg-white px-3 text-sm text-neutral-900 outline-none placeholder:text-neutral-400 focus:border-neutral-500"
+              />
+            </div>
+
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               <div>
                 <label htmlFor="password" className="block text-xs font-semibold tracking-wide text-neutral-700">
@@ -80,13 +93,13 @@ export default function RegisterPage() {
               />
               <span className="leading-6">
                 I agree to the{' '}
-                <a href="#" className="font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-700">
+                <Link href="/terms" className="font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-700">
                   Terms
-                </a>{' '}
+                </Link>{' '}
                 and{' '}
-                <a href="#" className="font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-700">
+                <Link href="/privacy" className="font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-700">
                   Privacy Policy
-                </a>
+                </Link>
               </span>
             </label>
 
