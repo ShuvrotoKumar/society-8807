@@ -46,11 +46,19 @@ const SchedulePage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Appointment scheduled:', {
-      date: selectedDate,
-      time: selectedTime,
-      ...formData
-    })
+    
+    const confirmationMessage = `Confirm your appointment:\n\nDate: January ${selectedDate}, 2025\nTime: ${selectedTime}\nName: ${formData.fullName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nPurpose: ${formData.consultationPurpose}\nMeeting: ${formData.meetingPreference === 'virtual' ? 'Virtual Meeting' : formData.meetingPreference === 'phone' ? 'Phone Call' : 'In-Person Meeting'}\n\nProceed to confirm?`
+    
+    if (window.confirm(confirmationMessage)) {
+      console.log('Appointment confirmed:', {
+        date: selectedDate,
+        time: selectedTime,
+        ...formData
+      })
+      alert('Appointment confirmed successfully! We will send you a confirmation email shortly.')
+    } else {
+      console.log('Appointment cancelled by user')
+    }
   }
 
   return (
