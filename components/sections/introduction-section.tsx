@@ -10,7 +10,7 @@ export const IntroductionSection: React.FC = () => {
               Building Wealth Through Smart Financial Planning
             </h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              At Society Max, we understand that every financial journey is unique. Our team of experienced 
+              At Society 8807, we understand that every financial journey is unique. Our team of experienced 
               advisors works closely with you to develop personalized strategies that align with your specific 
               goals and risk tolerance.
             </p>
