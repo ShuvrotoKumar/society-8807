@@ -9,39 +9,33 @@ type PageProps = {
 };
 
 export default function InsightDetailPage({ params }: PageProps) {
-  const item = insights.find((i) => i.href === `/insights/${params.slug}`);
+  const rawSlug = decodeURIComponent(params.slug ?? "").trim();
+  const normalizedSlug = rawSlug.replace(/^\/+|\/+$/g, "");
+  const slugParts = normalizedSlug
+    .split("/")
+    .filter(Boolean)
+    .map((p) => p.toLowerCase())
+    .filter((p) => p !== "insights");
 
-  if (!item) {
-    return (
-      <div className="min-h-screen bg-[#f6f2e9]">
-        <Header />
-        <main className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-xs text-neutral-500">
-            <Link href="/" className="hover:text-neutral-800">Home</Link>
-            <span className="px-2">/</span>
-            <Link href="/insights" className="hover:text-neutral-800">Insights</Link>
-          </div>
+  const slugSegment = slugParts[slugParts.length - 1] ?? "";
 
-          <h1 className="mt-6 font-serif text-3xl sm:text-4xl font-semibold text-neutral-900">
-            Insight not found
-          </h1>
-          <p className="mt-4 text-sm leading-6 text-neutral-600">
-            The insight you’re looking for doesn’t exist.
-          </p>
+  const item =
+    insights.find((i) => {
+      const href = (i.href ?? "").trim().replace(/^\/+|\/+$/g, "");
+      const hrefParts = href
+        .split("/")
+        .filter(Boolean)
+        .map((p) => p.toLowerCase())
+        .filter((p) => p !== "insights");
 
-          <div className="mt-10">
-            <Link
-              href="/insights"
-              className="inline-flex items-center justify-center rounded-md bg-[#C9A961] px-5 py-2 text-sm font-medium text-black"
-            >
-              Back to Insights
-            </Link>
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
+      const hrefSegment = hrefParts[hrefParts.length - 1] ?? "";
+      return hrefSegment === slugSegment;
+    }) ??
+    insights.find((i) => {
+      const href = (i.href ?? "").trim().toLowerCase();
+      return slugSegment ? href.includes(slugSegment) : false;
+    }) ??
+    insights[0];
 
   return (
     <div className="min-h-screen bg-[#f6f2e9]">
@@ -155,21 +149,6 @@ export default function InsightDetailPage({ params }: PageProps) {
               <Link href="/insights" className="text-xs text-neutral-600 hover:text-neutral-900">
                 Back to Insights
               </Link>
-
-              <div className="flex items-center gap-2">
-                <button className="h-8 w-8 rounded-full border border-black/10 bg-white text-xs text-neutral-700">
-                  
-                </button>
-                <button className="h-8 w-8 rounded-full border border-black/10 bg-white text-xs text-neutral-700">
-                  
-                </button>
-                <button className="h-8 w-8 rounded-full border border-black/10 bg-white text-xs text-neutral-700">
-                  
-                </button>
-                <button className="h-8 w-8 rounded-full border border-black/10 bg-white text-xs text-neutral-700">
-                  
-                </button>
-              </div>
 
               <div className="flex items-center gap-2">
                 <button className="rounded-full border border-black/10 bg-white px-3 py-1 text-xs text-neutral-700">

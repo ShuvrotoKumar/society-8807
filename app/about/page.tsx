@@ -1,7 +1,9 @@
 import React from 'react';
+import Link from 'next/link';
 import { Footer } from '@/components/layout/footer';
 import { Header } from '@/components/layout/header';
 import { CtaSection } from '@/components/sections/cta-section';
+import { advisors } from '@/lib/advisors';
 import {
   BadgeDollarSign,
   FileText,
@@ -12,57 +14,6 @@ import {
   ShieldCheck,
   Users,
 } from 'lucide-react';
-
-const advisors = [
-  {
-    name: 'Michael Richardson',
-    role: 'Founder & Chief Investment Officer',
-    badges: ['CFP®', 'CFA', 'MBA'],
-    bio: '25+ years experience in wealth management and portfolio construction for high-net-worth families.',
-    imageUrl:
-      '/images/a1.png',
-  },
-  {
-    name: 'Sarah Chen',
-    role: 'Senior Financial Planner',
-    badges: ['CFP®', 'EA'],
-    bio: 'Specializes in tax-efficient retirement planning and estate strategies for business owners and families.',
-    imageUrl:
-      '/images/a2.png',
-  },
-  {
-    name: 'David Martinez',
-    role: 'Wealth Advisor',
-    badges: ['CFP®', 'ChFC'],
-    bio: 'Specializes in tax-efficient retirement planning and estate strategies for business owners and families.',
-    imageUrl:
-      '/images/a3.png',
-  },
-  {
-    name: 'Sarah Chen',
-    role: 'Senior Financial Planner',
-    badges: ['CFP®', 'EA'],
-    bio: 'Specializes in tax-efficient retirement planning and estate strategies for business owners and families.',
-    imageUrl:
-      '/images/a4.png',
-  },
-  {
-    name: 'Sarah Chen',
-    role: 'Senior Financial Planner',
-    badges: ['CFP®', 'EA'],
-    bio: 'Specializes in tax-efficient retirement planning and estate strategies for business owners and families.',
-    imageUrl:
-      '/images/a5.png',
-  },
-  {
-    name: 'Sarah Chen',
-    role: 'Senior Financial Planner',
-    badges: ['CFP®', 'EA'],
-    bio: 'Specializes in tax-efficient retirement planning and estate strategies for business owners and families.',
-    imageUrl:
-      '/images/a6.png',
-  },
-];
 
 const clientExperience = [
   {
@@ -283,8 +234,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-       
-
         {/* Leadership Section */}
         <section className="bg-[#F6F2E8] py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -329,22 +278,23 @@ export default function AboutPage() {
 
                     <p className="mt-4 text-sm leading-6 text-neutral-600">{advisor.bio}</p>
 
-                    <a
-                      href="#"
+                    <Link
+                      href={`/about/advisors/${advisor.id}`}
                       className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#A47B22] hover:text-[#8D6A1D]"
+                      onClick={() => console.log("DEBUG clicked advisor.id:", advisor.id)}
                     >
                       View Full Bio
                       <span aria-hidden="true">→</span>
-                    </a>
+                    </Link>
                   </div>
                 </article>
               ))}
             </div>
           </div>
         </section>
-              
+
         {/*Client Experience*/}
-         <section className="bg-[#2c2c2c] py-20">
+        <section className="bg-[#2c2c2c] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <span className="inline-flex items-center rounded-full bg-[#2A2A2A] px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#C9A961] ring-1 ring-white/10">
