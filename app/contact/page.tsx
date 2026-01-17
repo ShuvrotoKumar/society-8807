@@ -22,7 +22,7 @@ export default function ContactPage() {
       <main>
         <section className="bg-gradient-to-b from-[#1A1D21] to-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#D4AF37]">
+            <h1 className="font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#C9A961]">
               Get In Touch
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-sm leading-6 text-neutral-400">
@@ -43,7 +43,7 @@ export default function ContactPage() {
                   <div className="mt-10 space-y-8">
                     <div className="flex gap-4">
                       <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-full bg-[#3A3A3A]">
-                        <MapPin className="h-4 w-4 text-[#D4AF37]" />
+                        <MapPin className="h-4 w-4 text-[#C9A961]" />
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-white">Address</p>
@@ -59,7 +59,7 @@ export default function ContactPage() {
 
                     <div className="flex gap-4">
                       <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-full bg-[#3A3A3A]">
-                        <Phone className="h-4 w-4 text-[#D4AF37]" />
+                        <Phone className="h-4 w-4 text-[#C9A961]" />
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-white">Phone</p>
@@ -73,7 +73,7 @@ export default function ContactPage() {
 
                     <div className="flex gap-4">
                       <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-full bg-[#3A3A3A]">
-                        <Mail className="h-4 w-4 text-[#D4AF37]" />
+                        <Mail className="h-4 w-4 text-[#C9A961]" />
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-white">Email</p>
@@ -87,28 +87,28 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="h-px w-full bg-[#D4AF37]/30" />
+                <div className="h-px w-full bg-[#C9A961]/30" />
 
                 <div className="px-8 py-8">
                   <p className="text-sm font-semibold text-white">Follow Us</p>
                   <div className="mt-5 flex gap-3">
                     <a
                       href="#"
-                      className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#3A3A3A] text-[#D4AF37]"
+                      className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#3A3A3A] text-[#C9A961]"
                       aria-label="LinkedIn"
                     >
                       <Linkedin className="h-4 w-4" />
                     </a>
                     <a
                       href="#"
-                      className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#3A3A3A] text-[#D4AF37]"
+                      className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#3A3A3A] text-[#C9A961]"
                       aria-label="Twitter"
                     >
                       <Twitter className="h-4 w-4" />
                     </a>
                     <a
                       href="#"
-                      className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#3A3A3A] text-[#D4AF37]"
+                      className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#3A3A3A] text-[#C9A961]"
                       aria-label="Facebook"
                     >
                       <Facebook className="h-4 w-4" />
@@ -129,14 +129,14 @@ export default function ContactPage() {
                       <label className="text-[11px] font-semibold text-neutral-600">Full Name *</label>
                       <input
                         placeholder="John Smith"
-                        className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/60"
+                        className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#C9A961]/60"
                       />
                     </div>
                     <div>
                       <label className="text-[11px] font-semibold text-neutral-600">Email Address *</label>
                       <input
                         placeholder="john@example.com"
-                        className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/60"
+                        className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#C9A961]/60"
                       />
                     </div>
                   </div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                     <label className="text-[11px] font-semibold text-neutral-600">Phone Number</label>
                     <input
                       placeholder="+1 (555) 000-0000"
-                      className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/60"
+                      className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#C9A961]/60"
                     />
                   </div>
 
@@ -154,19 +154,19 @@ export default function ContactPage() {
                     <textarea
                       rows={5}
                       placeholder="Tell us about your financial goals and how we can help..."
-                      className="mt-2 w-full resize-none rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/60"
+                      className="mt-2 w-full resize-none rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#C9A961]/60"
                     />
                   </div>
 
                   <div className="flex items-start gap-3">
                     <input
                       type="checkbox"
-                      className="mt-1 h-4 w-4 rounded border-black/20 text-[#D4AF37] focus:ring-[#D4AF37]"
+                      className="mt-1 h-4 w-4 rounded border-black/20 text-[#C9A961] focus:ring-[#C9A961]"
                     />
                     <p className="text-[11px] leading-5 text-neutral-500">
                       I consent to Heritage Wealth collecting and storing my information to respond to my inquiry.
                       I understand that my data will be handled in accordance with the
-                      <Link href="/privacy" className="ml-1 text-[#D4AF37] underline">
+                      <Link href="/privacy" className="ml-1 text-[#C9A961] underline">
                         Privacy Policy
                       </Link>
                       .
@@ -174,7 +174,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="pt-2">
-                    <Button className="h-11 w-full rounded-md !bg-[#D4AF37] text-[13px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#D4AF37]">
+                    <Button className="h-11 w-full rounded-md !bg-[#C9A961] text-[13px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#C9A961]">
                       Send Message
                     </Button>
                   </div>
@@ -199,7 +199,7 @@ export default function ContactPage() {
 
             <div className="mx-auto mt-10 max-w-4xl rounded-2xl bg-[#1F1F1F] px-6 py-14 text-center shadow-sm sm:px-10">
               <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#2E2E2E]">
-                <CalendarDays className="h-5 w-5 text-[#D4AF37]" />
+                <CalendarDays className="h-5 w-5 text-[#C9A961]" />
               </div>
 
               <h3 className="mt-6 font-serif text-lg font-semibold text-white">Calendly Integration</h3>
@@ -211,22 +211,22 @@ export default function ContactPage() {
 
               <ul className="mx-auto mt-8 max-w-sm space-y-3 text-left text-xs leading-6 text-neutral-200">
                 <li className="flex gap-3">
-                  <Check className="mt-1 h-4 w-4 text-[#D4AF37]" />
+                  <Check className="mt-1 h-4 w-4 text-[#C9A961]" />
                   <span>Choose a convenient time slot</span>
                 </li>
                 <li className="flex gap-3">
-                  <Check className="mt-1 h-4 w-4 text-[#D4AF37]" />
+                  <Check className="mt-1 h-4 w-4 text-[#C9A961]" />
                   <span>Automatic calendar synchronization</span>
                 </li>
                 <li className="flex gap-3">
-                  <Check className="mt-1 h-4 w-4 text-[#D4AF37]" />
+                  <Check className="mt-1 h-4 w-4 text-[#C9A961]" />
                   <span>Receive confirmations &amp; reminders</span>
                 </li>
               </ul>
 
               <div className="mt-10 flex justify-center">
                 <Link href="/schedule">
-                  <Button className="h-10 rounded-md !bg-[#D4AF37] px-6 text-[12px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#D4AF37]">
+                  <Button className="h-10 rounded-md !bg-[#C9A961] px-6 text-[12px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#C9A961]">
                       Connect Calendly
                     </Button>
                 </Link>
@@ -254,7 +254,7 @@ export default function ContactPage() {
 
                 <ul className="mt-5 space-y-3 text-md leading-6 text-neutral-200">
                   <li className="flex gap-3">
-                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
+                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#C9A961]" />
                     <span>
                       <span className="font-semibold text-white">No Financial Advice via Form:</span> The contact form is for
                       general inquiries only. We do not provide personalized financial advice, investment recommendations, or
@@ -262,7 +262,7 @@ export default function ContactPage() {
                     </span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
+                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#C9A961]" />
                     <span>
                       <span className="font-semibold text-white">Confidential Information:</span> Please do not include
                       sensitive personal or financial information in your message. Detailed discussions should be conducted
@@ -270,7 +270,7 @@ export default function ContactPage() {
                     </span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
+                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#C9A961]" />
                     <span>
                       <span className="font-semibold text-white">Regulatory Compliance:</span> All financial advice and
                       services are provided in accordance with SEC regulations and fiduciary standards.

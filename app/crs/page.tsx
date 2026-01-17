@@ -12,7 +12,7 @@ export default function CrsPage() {
       <main>
         <section className="bg-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#D4AF37]">
+            <h1 className="font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#C9A961]">
               Client Relationship Summary (Form CRS)
             </h1>
             <p className="mx-auto mt-6 max-w-3xl text-sm leading-6 text-neutral-400">
@@ -22,7 +22,7 @@ export default function CrsPage() {
             <div className="mt-10 flex justify-center">
               <a
                 href="#"
-                className="inline-flex h-10 items-center gap-3 rounded-md bg-[#D4AF37] px-6 text-[12px] font-semibold text-black transition-colors hover:bg-[#B99225]"
+                className="inline-flex h-10 items-center gap-3 rounded-md bg-[#C9A961] px-6 text-[12px] font-semibold text-black transition-colors hover:bg-[#B99225]"
               >
                 Download Form CRS
                 <span className="inline-flex h-6 w-6 items-center justify-center rounded-sm bg-black/10">
@@ -47,23 +47,23 @@ export default function CrsPage() {
 
                 <ul className="mt-6 space-y-3 text-md leading-6 text-neutral-700">
                   <li className="flex gap-3">
-                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
+                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#C9A961]" />
                     <span>The types of services we offer</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
+                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#C9A961]" />
                     <span>Our fees, costs, and how we are compensated</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
+                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#C9A961]" />
                     <span>Any conflicts of interest that may affect our recommendations</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
+                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#C9A961]" />
                     <span>Our disciplinary history and regulatory oversight</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#D4AF37]" />
+                    <span className="mt-[7px] h-2 w-2 flex-none rounded-full bg-[#C9A961]" />
                     <span>How to find additional information about our firm</span>
                   </li>
                 </ul>
@@ -71,7 +71,7 @@ export default function CrsPage() {
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                   <a
                     href="#"
-                    className="inline-flex h-10 items-center gap-2 rounded-md bg-[#D4AF37] px-5 text-[16px] font-semibold text-black transition-colors hover:bg-[#B99225]"
+                    className="inline-flex h-10 items-center gap-2 rounded-md bg-[#C9A961] px-5 text-[16px] font-semibold text-black transition-colors hover:bg-[#B99225]"
                   >
                     <Download className="h-4 w-4" />
                     Download Full Form CRS
@@ -93,7 +93,7 @@ export default function CrsPage() {
                  
                   <div className="mt-8 flex justify-center">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#121417] ring-1 ring-black/5">
-                      <FileText className="h-8 w-8 text-[#D4AF37]" />
+                      <FileText className="h-8 w-8 text-[#C9A961]" />
                     </div>
                   </div>
                   <h3 className="mt-4 font-serif text-xl font-semibold text-neutral-900">PDF Document Viewer</h3>
@@ -103,7 +103,7 @@ export default function CrsPage() {
                   <div className="mt-8">
                     <a
                       href="#"
-                      className="inline-flex h-10 items-center gap-3 rounded-md bg-[#121417] px-6 text-[12px] font-semibold text-[#D4AF37] transition-colors hover:bg-[#2A2A2A]"
+                      className="inline-flex h-10 items-center gap-3 rounded-md bg-[#121417] px-6 text-[12px] font-semibold text-[#C9A961] transition-colors hover:bg-[#2A2A2A]"
                     >
                       Load PDF Document
                     </a>
@@ -117,7 +117,7 @@ export default function CrsPage() {
         <section className="bg-[#121417] py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
             <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10">
-              <ShieldCheck className="h-8 w-8 text-[#D4AF37]" />
+              <ShieldCheck className="h-8 w-8 text-[#C9A961]" />
             </div>
             <h3 className="mt-6 font-serif text-2xl font-semibold text-white">Regulatory Compliance</h3>
             <p className="mx-auto mt-3 max-w-3xl text-md leading-6 text-neutral-300">
@@ -131,7 +131,7 @@ export default function CrsPage() {
                 href="https://www.investor.gov/crs"
                 target="_blank"
                 rel="noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-md font-semibold text-[#D4AF37] hover:text-[#E7C55A]"
+                className="mt-4 inline-flex items-center gap-2 text-md font-semibold text-[#C9A961] hover:text-[#E7C55A]"
               >
                 Visit the SEC&apos;s Form CRS page for more details
                 <ExternalLink className="h-4 w-4" />
@@ -141,7 +141,7 @@ export default function CrsPage() {
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-[#D4AF37] px-6 text-[14px] font-semibold text-black transition-colors hover:bg-[#B99225]"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-[#C9A961] px-6 text-[14px] font-semibold text-black transition-colors hover:bg-[#B99225]"
               >
                 Contact Our Team
               </Link>

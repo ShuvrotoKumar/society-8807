@@ -10,10 +10,10 @@ export default function WhoWeServePage() {
 
         <section className="bg-gradient-to-b from-[#1A1D21] to-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-serif text-4xl md:text-5xl font-semibold tracking-wide text-[#D4AF37]">
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold tracking-wide text-[#C9A961]">
               Who We Serve
             </h1>
-            <div className="mx-auto mt-3 h-px w-16 bg-[#D4AF37]/80" />
+            <div className="mx-auto mt-3 h-px w-16 bg-[#C9A961]/80" />
 
             <p className="mx-auto mt-8 max-w-3xl text-sm leading-6 text-neutral-400 md:text-base">
               We partner with clients navigating complex financial decisions—professionals,

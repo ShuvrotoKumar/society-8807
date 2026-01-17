@@ -78,10 +78,10 @@ export default function ServicesPage() {
       <main>
         <section className="bg-gradient-to-b from-[#1A1D21] to-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#D4AF37]">
+            <h1 className="font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#C9A961]">
               Our Services
             </h1>
-            <div className="mx-auto mt-3 h-px w-16 bg-[#D4AF37]/80" />
+            <div className="mx-auto mt-3 h-px w-16 bg-[#C9A961]/80" />
 
             <p className="mx-auto mt-8 max-w-3xl text-xs leading-6 text-neutral-400 sm:text-sm md:text-base">
               We offer comprehensive wealth management designed to align your financial
@@ -106,7 +106,7 @@ export default function ServicesPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-[64px_1fr]">
                     <div className="flex justify-center md:justify-start">
                       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#2A2A2A]">
-                        <Icon className="h-5 w-5 text-[#D4AF37]" />
+                        <Icon className="h-5 w-5 text-[#C9A961]" />
                       </div>
                     </div>
 
@@ -147,7 +147,7 @@ export default function ServicesPage() {
             <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3">
               <div className="text-center">
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#3A3A3A]">
-                  <Handshake className="h-5 w-5 text-[#D4AF37]" />
+                  <Handshake className="h-5 w-5 text-[#C9A961]" />
                 </div>
                 <h3 className="mt-5 text-lg font-medium text-neutral-100">Ongoing Partnership</h3>
                 <p className="mx-auto mt-3 max-w-xs text-md leading-6 text-neutral-300">
@@ -158,7 +158,7 @@ export default function ServicesPage() {
 
               <div className="text-center">
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#3A3A3A]">
-                  <CalendarCheck className="h-5 w-5 text-[#D4AF37]" />
+                  <CalendarCheck className="h-5 w-5 text-[#C9A961]" />
                 </div>
                 <h3 className="mt-5 text-lg font-medium text-neutral-100">Regular Reviews</h3>
                 <p className="mx-auto mt-3 max-w-xs text-md leading-6 text-neutral-300">
@@ -169,7 +169,7 @@ export default function ServicesPage() {
 
               <div className="text-center">
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#3A3A3A]">
-                  <MessageCircle className="h-5 w-5 text-[#D4AF37]" />
+                  <MessageCircle className="h-5 w-5 text-[#C9A961]" />
                 </div>
                 <h3 className="mt-5 text-lg font-medium text-neutral-100">Always Accessible</h3>
                 <p className="mx-auto mt-3 max-w-xs text-md leading-6 text-neutral-300">
@@ -192,60 +192,60 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <article className="rounded-2xl bg-[#2A2A2A] px-8 py-10 text-center shadow-sm">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#D4AF37]">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#C9A961]">
                   <Check className="h-5 w-5 text-black" />
                 </div>
                 <h3 className="mt-6 text-sm font-semibold text-white">This Is For You If</h3>
 
                 <ul className="mt-6 space-y-4 text-left text-xs leading-6 text-neutral-200">
                   <li className="flex gap-3">
-                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You have $1M+ in investable assets</span>
                   </li>
                   <li className="flex gap-3">
-                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You value long-term relationships over quick fixes</span>
                   </li>
                   <li className="flex gap-3">
-                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You want comprehensive planning, not just investment management</span>
                   </li>
                   <li className="flex gap-3">
-                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You’re comfortable with fee-based advisory services</span>
                   </li>
                   <li className="flex gap-3">
-                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <Check className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You’re looking for proactive guidance and education</span>
                   </li>
                 </ul>
               </article>
 
               <article className="rounded-2xl bg-white px-8 py-10 text-center shadow-sm ring-1 ring-black/5">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#D4AF37]">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#C9A961]">
                   <X className="h-5 w-5 text-black" />
                 </div>
                 <h3 className="mt-6 text-sm font-semibold text-neutral-900">This Isn’t For You If</h3>
 
                 <ul className="mt-6 space-y-4 text-left text-xs leading-6 text-neutral-600">
                   <li className="flex gap-3">
-                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You’re looking for day trading or speculation strategies</span>
                   </li>
                   <li className="flex gap-3">
-                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You prefer to manage investments entirely on your own</span>
                   </li>
                   <li className="flex gap-3">
-                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You want guaranteed returns or “get rich quick” schemes</span>
                   </li>
                   <li className="flex gap-3">
-                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You’re not comfortable with ongoing advisory fees</span>
                   </li>
                   <li className="flex gap-3">
-                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#D4AF37]" />
+                    <X className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#C9A961]" />
                     <span>You need immediate liquidity for most of your assets</span>
                   </li>
                 </ul>

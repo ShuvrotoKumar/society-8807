@@ -5,15 +5,15 @@ export default function LoginPage() {
     <div className="w-full">
       <div className="overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5">
         <div className="bg-gradient-to-b from-[#1A1D21] to-[#121417] px-8 pb-8 pt-10 text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#D4AF37]/15 ring-1 ring-[#D4AF37]/25">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 text-[#D4AF37]">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#C9A961]/15 ring-1 ring-[#C9A961]/25">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 text-[#C9A961]">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 3h4a2 2 0 0 1 2 2v4" />
               <path strokeLinecap="round" strokeLinejoin="round" d="M10 14l11-11" />
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 10v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
             </svg>
           </div>
 
-          <h1 className="mt-5 font-serif text-3xl font-semibold tracking-wide text-[#D4AF37]">Welcome back</h1>
+          <h1 className="mt-5 font-serif text-3xl font-semibold tracking-wide text-[#C9A961]">Welcome back</h1>
           <p className="mx-auto mt-3 max-w-sm text-sm leading-6 text-neutral-400">
             Sign in to access your account
           </p>
@@ -55,14 +55,14 @@ export default function LoginPage() {
             <label className="flex items-center gap-3 text-sm text-neutral-600">
               <input
                 type="checkbox"
-                className="h-4 w-4 rounded border-neutral-300 text-[#D4AF37] accent-[#D4AF37]"
+                className="h-4 w-4 rounded border-neutral-300 text-[#C9A961] accent-[#C9A961]"
               />
               Remember me
             </label>
 
             <button
               type="submit"
-              className="mt-2 inline-flex h-11 w-full items-center justify-center rounded-md bg-[#D4AF37] text-sm font-semibold text-black shadow-sm hover:bg-[#B99225] focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:ring-offset-2"
+              className="mt-2 inline-flex h-11 w-full items-center justify-center rounded-md bg-[#C9A961] text-sm font-semibold text-black shadow-sm hover:bg-[#B99225] focus:outline-none focus:ring-2 focus:ring-[#C9A961] focus:ring-offset-2"
             >
               Sign In
             </button>

@@ -68,10 +68,10 @@ export default function DisclosuresPage() {
       <main>
         <section className="bg-gradient-to-b from-[#1A1D21] to-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-            <span className="inline-flex items-center rounded-full bg-white/5 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#D4AF37] ring-1 ring-white/10">
+            <span className="inline-flex items-center rounded-full bg-white/5 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#C9A961] ring-1 ring-white/10">
               Legal & Regulatory
             </span>
-            <h1 className="mt-6 font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#D4AF37]">
+            <h1 className="mt-6 font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#C9A961]">
               Disclosures
             </h1>
             <p className="mx-auto mt-6 max-w-3xl text-sm leading-6 text-neutral-400">
@@ -150,14 +150,14 @@ export default function DisclosuresPage() {
                       href="#"
                       className="group flex items-center justify-between rounded-xl bg-white/5 px-5 py-4 ring-1 ring-white/10 transition-colors hover:bg-white/10"
                     >
-                      <span className="text-sm font-semibold text-[#D4AF37]">BrokerCheck</span>
+                      <span className="text-sm font-semibold text-[#C9A961]">BrokerCheck</span>
                       <ExternalLink className="h-4 w-4 text-neutral-200 transition-transform group-hover:translate-x-0.5" />
                     </a>
                     <a
                       href="#"
                       className="group flex items-center justify-between rounded-xl bg-white/5 px-5 py-4 ring-1 ring-white/10 transition-colors hover:bg-white/10"
                     >
-                      <span className="text-sm font-semibold text-[#D4AF37]">Form CRS</span>
+                      <span className="text-sm font-semibold text-[#C9A961]">Form CRS</span>
                       <ExternalLink className="h-4 w-4 text-neutral-200 transition-transform group-hover:translate-x-0.5" />
                     </a>
                   </div>

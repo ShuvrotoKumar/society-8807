@@ -103,7 +103,7 @@ export default function InsightsPage() {
       <main>
         <section className="bg-gradient-to-b from-[#1A1D21] to-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-serif text-4xl md:text-5xl font-semibold tracking-wide text-[#D4AF37]">
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold tracking-wide text-[#C9A961]">
               Investment Insights
             </h1>
             <p className="mx-auto mt-4 max-w-3xl text-sm leading-6 text-neutral-400">
@@ -149,7 +149,7 @@ export default function InsightsPage() {
 
             <div className="mt-12 flex justify-center">
               <div className="inline-flex items-center gap-2">
-                <button className="h-7 w-7 rounded bg-[#D4AF37] text-[11px] font-medium text-black">
+                <button className="h-7 w-7 rounded bg-[#C9A961] text-[11px] font-medium text-black">
                   1
                 </button>
                 <button className="h-7 w-7 rounded bg-[#3A3A3A] text-[11px] text-neutral-200 ring-1 ring-white/10">

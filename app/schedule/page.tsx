@@ -60,7 +60,7 @@ const SchedulePage = () => {
       <main>
         <section className="bg-[#1A1A1A] py-20 px-4">
           <div className="mx-auto max-w-5xl text-center">
-            <h1 className="font-serif text-4xl font-medium leading-tight text-[#D4AF37] sm:text-5xl md:text-6xl whitespace-nowrap">
+            <h1 className="font-serif text-4xl font-medium leading-tight text-[#C9A961] sm:text-5xl md:text-6xl whitespace-nowrap">
               Ready to begin your wealth management <br /> journey?
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-sm leading-6 text-neutral-400 sm:text-base">
@@ -117,7 +117,7 @@ const SchedulePage = () => {
                         className={
                           `h-9 rounded-md text-xs transition-colors ` +
                           (isSelected
-                            ? 'bg-[#D4AF37] text-black'
+                            ? 'bg-[#C9A961] text-black'
                             : 'text-neutral-800 hover:bg-neutral-100')
                         }
                       >
@@ -140,7 +140,7 @@ const SchedulePage = () => {
                           className={
                             `h-9 rounded-md border text-xs transition-colors ` +
                             (isSelected
-                              ? 'border-[#D4AF37] bg-[#D4AF37]/15 text-neutral-900'
+                              ? 'border-[#C9A961] bg-[#C9A961]/15 text-neutral-900'
                               : 'border-neutral-300 bg-white text-neutral-700 hover:bg-neutral-50')
                           }
                         >
@@ -221,7 +221,7 @@ const SchedulePage = () => {
 
                   <Button
                     type="submit"
-                    className="mt-2 h-11 w-full rounded-md bg-[#D4AF37] text-sm font-semibold text-black hover:bg-[#B99225]"
+                    className="mt-2 h-11 w-full rounded-md bg-[#C9A961] text-sm font-semibold text-black hover:bg-[#B99225]"
                   >
                     Confirm Appointment
                   </Button>

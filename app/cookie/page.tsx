@@ -69,10 +69,10 @@ export default function CookiePolicyPage() {
       <main>
         <section className="bg-gradient-to-b from-[#1A1D21] to-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-            <span className="inline-flex items-center rounded-full bg-white/5 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#D4AF37] ring-1 ring-white/10">
+            <span className="inline-flex items-center rounded-full bg-white/5 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#C9A961] ring-1 ring-white/10">
               Legal
             </span>
-            <h1 className="mt-6 font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#D4AF37]">
+            <h1 className="mt-6 font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#C9A961]">
               Cookie Policy
             </h1>
             <p className="mx-auto mt-6 max-w-3xl text-sm leading-6 text-neutral-400">
@@ -144,13 +144,13 @@ export default function CookiePolicyPage() {
                 <div className="mt-8 rounded-xl bg-[#1a1a1a] px-6 py-6 text-white">
                   <div className="flex items-center gap-3">
                     <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10">
-                      <ShieldCheck className="h-4 w-4 text-[#D4AF37]" />
+                      <ShieldCheck className="h-4 w-4 text-[#C9A961]" />
                     </div>
                     <p className="font-serif text-lg font-semibold">Related Policies</p>
                   </div>
                   <p className="mt-3 text-xs leading-6 text-neutral-300">
                     For details about personal data handling, review our
-                    <Link href="/privacy" className="ml-1 text-[#D4AF37] underline">
+                    <Link href="/privacy" className="ml-1 text-[#C9A961] underline">
                       Privacy Policy
                     </Link>
                     .

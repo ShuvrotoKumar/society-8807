@@ -18,7 +18,7 @@ export const CtaSection: React.FC = () => {
 
           <div className="mt-10 flex justify-center">
             <Link href="/schedule">
-            <Button className="h-12 w-[260px] rounded-[10px] !bg-[#D4AF37] text-[13px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#D4AF37]">
+            <Button className="h-12 w-[260px] rounded-[10px] !bg-[#C9A961] text-[13px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#C9A961]">
               Schedule a Consultation
             </Button>
             </Link>

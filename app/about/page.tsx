@@ -117,9 +117,9 @@ export default function AboutPage() {
         {/* Philosophy Section */}
         <section className="bg-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-            <span className="inline-block bg-[#2A2A2A] text-[#D4AF37] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Our Philosophy</span>
+            <span className="inline-block bg-[#2A2A2A] text-[#C9A961] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Our Philosophy</span>
             <h2>
-              <span className="font-serif text-5xl md:text-6xl font-bold text-[#D4AF37] mt-6 leading-tight">
+              <span className="font-serif text-5xl md:text-6xl font-bold text-[#C9A961] mt-6 leading-tight">
                 Built on Trust,
               </span>
               <br />
@@ -132,15 +132,15 @@ export default function AboutPage() {
             </p>
             <div className="mt-12 flex flex-wrap justify-center gap-8">
               <div className="flex items-center space-x-3 text-neutral-200">
-                <Shield className="h-6 w-6 text-[#D4AF37]" />
+                <Shield className="h-6 w-6 text-[#C9A961]" />
                 <span>Fiduciary Standard</span>
               </div>
               <div className="flex items-center space-x-3 text-neutral-200">
-                <Users className="h-6 w-6 text-[#D4AF37]" />
+                <Users className="h-6 w-6 text-[#C9A961]" />
                 <span>Client-First Always</span>
               </div>
               <div className="flex items-center space-x-3 text-neutral-200">
-                <FileText className="h-6 w-6 text-[#D4AF37]" />
+                <FileText className="h-6 w-6 text-[#C9A961]" />
                 <span>Independent Advice</span>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function AboutPage() {
         {/* Journey Section */}
         <section className="bg-neutral-100 py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-            <span className="inline-block bg-neutral-800 text-[#D4AF37] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Our Journey</span>
+            <span className="inline-block bg-neutral-800 text-[#C9A961] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Our Journey</span>
             <h2 className="font-serif text-5xl md:text-6xl font-bold text-neutral-800 mt-6 leading-tight">
               A Legacy of Trusted Guidance
             </h2>
@@ -166,9 +166,9 @@ export default function AboutPage() {
               <div className="relative space-y-6">
                 {/* 2005 */}
                 <div className="relative flex justify-center md:justify-start">
-                  <div className="absolute left-1/2 top-6 w-4 h-4 bg-[#D4AF37] rounded-full z-10"></div>
+                  <div className="absolute left-1/2 top-6 w-4 h-4 bg-[#C9A961] rounded-full z-10"></div>
                   <div className="bg-white rounded-lg shadow-lg p-10 max-w-md w-full md:w-auto md:ml-4">
-                    <p className="text-[#D4AF37] text-sm font-serif font-semibold text-right">2005</p>
+                    <p className="text-[#C9A961] text-sm font-serif font-semibold text-right">2005</p>
                     <h3 className="font-serif text-2xl font-bold text-neutral-800 mt-2 text-right">Founded on Principle</h3>
                     <p className="text-neutral-600 mt-4 text-right">
                       Started with a commitment to fee-only, fiduciary advice when commission-based models dominated the industry.
@@ -178,9 +178,9 @@ export default function AboutPage() {
 
                 {/* 2012 */}
                 <div className="relative flex justify-center md:justify-end">
-                  <div className="absolute left-1/2 top-6 w-4 h-4 bg-[#D4AF37] rounded-full z-10"></div>
+                  <div className="absolute left-1/2 top-6 w-4 h-4 bg-[#C9A961] rounded-full z-10"></div>
                   <div className="bg-white rounded-lg shadow-lg p-12 max-w-md w-full md:w-auto md:mr-4 text-left">
-                    <p className="text-[#D4AF37] text-sm font-semibold">2012</p>
+                    <p className="text-[#C9A961] text-sm font-semibold">2012</p>
                     <h3 className="font-serif text-2xl font-bold text-neutral-800 mt-2">Expanded Our Team</h3>
                     <p className="text-neutral-600 mt-4">
                       Welcomed senior advisors and support staff to serve growing client base with broader expertise.
@@ -190,9 +190,9 @@ export default function AboutPage() {
 
                 {/* 2018 */}
                 <div className="relative flex justify-center md:justify-start">
-                  <div className="absolute left-1/2 top-6 w-4 h-4 bg-[#D4AF37] rounded-full z-10"></div>
+                  <div className="absolute left-1/2 top-6 w-4 h-4 bg-[#C9A961] rounded-full z-10"></div>
                   <div className="bg-white rounded-lg shadow-lg p-12 max-w-md w-full md:w-auto md:ml-8 text-right">
-                    <p className="text-[#D4AF37] text-sm font-semibold">2018</p>
+                    <p className="text-[#C9A961] text-sm font-semibold">2018</p>
                     <h3 className="font-serif text-2xl font-bold text-neutral-800 mt-2">Introduced Technology</h3>
                     <p className="text-neutral-600 mt-4">
                       Implemented digital planning tools and client portal for enhanced service delivery.
@@ -202,9 +202,9 @@ export default function AboutPage() {
 
                 {/* 2024 */}
                 <div className="relative flex justify-center md:justify-end">
-                  <div className="absolute left-1/2 top-6 w-4 h-4 bg-[#D4AF37] rounded-full z-10"></div>
+                  <div className="absolute left-1/2 top-6 w-4 h-4 bg-[#C9A961] rounded-full z-10"></div>
                   <div className="bg-white rounded-lg shadow-lg p-12 max-w-md w-full md:w-auto md:mr-8 text-left">
-                    <p className="text-[#D4AF37] text-sm font-semibold">2024</p>
+                    <p className="text-[#C9A961] text-sm font-semibold">2024</p>
                     <h3 className="font-serif text-2xl font-bold text-neutral-800 mt-2">Next Generation Leadership</h3>
                     <p className="text-neutral-600 mt-4">
                       Transitioned leadership to next generation while maintaining founding values of client-first service.
@@ -219,7 +219,7 @@ export default function AboutPage() {
         {/* Planning Section */}
         <section className="bg-[#2A2A2A] py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-            <span className="inline-block bg-[#D4AF37] text-black text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Our Approach</span>
+            <span className="inline-block bg-[#C9A961] text-black text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Our Approach</span>
             <h2 className="font-serif text-5xl md:text-6xl font-bold text-white mt-6 leading-tight">
               Planning First, Products Second
             </h2>
@@ -230,7 +230,7 @@ export default function AboutPage() {
             <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
               {/* Card 1 */}
               <div className="bg-[#3A3A3A] p-8 rounded-lg shadow-lg text-left transition-all duration-300 hover:scale-105">
-                <div className="flex items-center justify-center w-12 h-12 bg-[#D4AF37] rounded-full mb-4">
+                <div className="flex items-center justify-center w-12 h-12 bg-[#C9A961] rounded-full mb-4">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.12 2-2.5 2S4 20.105 4 19s1.12-2 2.5-2S9 17.895 9 19zm0 0h12m-9 0a2.5 2.5 0 00-2.5-2H4m-2 0h2.5M12 3v13m0 0h2.5m-2.5 0a2.5 2.5 0 00-2.5-2H9m-2 0h2.5"></path>
                   </svg>
@@ -243,7 +243,7 @@ export default function AboutPage() {
 
               {/* Card 2 */}
               <div className="bg-[#3A3A3A] p-8 rounded-lg shadow-lg text-left transition-all duration-300 hover:scale-105">
-                <div className="flex items-center justify-center w-12 h-12 bg-[#D4AF37] rounded-full mb-4">
+                <div className="flex items-center justify-center w-12 h-12 bg-[#C9A961] rounded-full mb-4">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16.4 15.2c-1.1 1.2-2.8 1.2-4 0L4 6.8c-1.1-1.2-1.1-2.8 0-4l2.8-2.8c1.1-1.1 2.8-1.1 4 0l8.4 8.4c1.1 1.1 1.1 2.8 0 4l-2.8 2.8z"></path>
                   </svg>
@@ -256,7 +256,7 @@ export default function AboutPage() {
 
               {/* Card 3 */}
               <div className="bg-[#3A3A3A] p-8 rounded-lg shadow-lg text-left transition-all duration-300 hover:scale-105">
-                <div className="flex items-center justify-center w-12 h-12 bg-[#D4AF37] rounded-full mb-4">
+                <div className="flex items-center justify-center w-12 h-12 bg-[#C9A961] rounded-full mb-4">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                   </svg>
@@ -271,13 +271,13 @@ export default function AboutPage() {
             {/* Testimonial */}
             <div className="mt-20 max-w-4xl mx-auto">
               <div className="bg-[#3A3A3A] p-10 rounded-lg shadow-lg text-center">
-                <svg className="w-8 h-8 text-[#D4AF37] mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#C9A961] mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                 </svg>
                 <p className="text-white text-lg italic leading-relaxed">
                   “The independence is what sets them apart. I never have to wonder if their recommendations are influenced by commissions or quotas.”
                 </p>
-                <p className="text-[#D4AF37] font-semibold mt-6">— Michael Richardson</p>
+                <p className="text-[#C9A961] font-semibold mt-6">— Michael Richardson</p>
               </div>
             </div>
           </div>

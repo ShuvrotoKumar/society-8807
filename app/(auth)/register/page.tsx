@@ -5,14 +5,14 @@ export default function RegisterPage() {
     <div className="w-full">
       <div className="overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5">
         <div className="bg-gradient-to-b from-[#1A1D21] to-[#121417] px-8 pb-8 pt-10 text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#D4AF37]/15 ring-1 ring-[#D4AF37]/25">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 text-[#D4AF37]">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#C9A961]/15 ring-1 ring-[#C9A961]/25">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 text-[#C9A961]">
               <path strokeLinecap="round" strokeLinejoin="round" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
             </svg>
           </div>
 
-          <h1 className="mt-5 font-serif text-3xl font-semibold tracking-wide text-[#D4AF37]">Create Account</h1>
+          <h1 className="mt-5 font-serif text-3xl font-semibold tracking-wide text-[#C9A961]">Create Account</h1>
           <p className="mx-auto mt-3 max-w-sm text-sm leading-6 text-neutral-400">
             Sign up to get started with your account
           </p>
@@ -76,7 +76,7 @@ export default function RegisterPage() {
             <label className="flex items-start gap-3 text-sm text-neutral-600">
               <input
                 type="checkbox"
-                className="mt-1 h-4 w-4 rounded border-neutral-300 text-[#D4AF37] accent-[#D4AF37]"
+                className="mt-1 h-4 w-4 rounded border-neutral-300 text-[#C9A961] accent-[#C9A961]"
               />
               <span className="leading-6">
                 I agree to the{' '}
@@ -92,7 +92,7 @@ export default function RegisterPage() {
 
             <button
               type="submit"
-              className="mt-2 inline-flex h-11 w-full items-center justify-center rounded-md bg-[#D4AF37] text-sm font-semibold text-black shadow-sm hover:bg-[#B99225] focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:ring-offset-2"
+              className="mt-2 inline-flex h-11 w-full items-center justify-center rounded-md bg-[#C9A961] text-sm font-semibold text-black shadow-sm hover:bg-[#B99225] focus:outline-none focus:ring-2 focus:ring-[#C9A961] focus:ring-offset-2"
             >
               Create Account
             </button>

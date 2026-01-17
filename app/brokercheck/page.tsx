@@ -38,7 +38,7 @@ export default function BrokerCheckPage() {
       <main>
         <section className="bg-[#121417] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#D4AF37]">
+            <h1 className="font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#C9A961]">
               Check Our Firm's Professional Credentials
             </h1>
             <p className="mx-auto mt-6 max-w-3xl text-sm leading-6 text-neutral-400">
@@ -50,7 +50,7 @@ export default function BrokerCheckPage() {
                 href="https://brokercheck.finra.org/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-10 items-center gap-3 rounded-md bg-[#D4AF37] px-6 text-[12px] font-semibold text-black transition-colors hover:bg-[#B99225]"
+                className="inline-flex h-10 items-center gap-3 rounded-md bg-[#C9A961] px-6 text-[12px] font-semibold text-black transition-colors hover:bg-[#B99225]"
               >
                 Go to BrokerCheck
                 <span className="inline-flex h-6 w-6 items-center justify-center rounded-sm bg-black/10">
@@ -64,7 +64,7 @@ export default function BrokerCheckPage() {
         <section className="bg-[#f3f0e7] py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 items-center justify-center bg-[#D4AF37]">
+              <div className="flex h-10 w-10 items-center justify-center bg-[#C9A961]">
                 <BadgeCheck className="h-5 w-5 text-black" />
               </div>
               <div className="min-w-0">
@@ -120,7 +120,7 @@ export default function BrokerCheckPage() {
                   style={{ backgroundColor: '' }}
                 >
                   <div className="flex h-40 w-40 items-center justify-center bg-[#2A2A2A] ring-1 ring-black/10">
-                    <CheckCheck className="h-10 w-10 text-[#D4AF37]" />
+                    <CheckCheck className="h-10 w-10 text-[#C9A961]" />
                   </div>
                 </div>
               </div>
