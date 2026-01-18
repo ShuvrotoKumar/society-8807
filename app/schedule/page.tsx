@@ -91,8 +91,8 @@ const SchedulePage = () => {
       <main>
         <section className="bg-[#1A1A1A] py-20 px-4">
           <div className="mx-auto max-w-5xl text-center">
-            <h1 className="font-serif text-4xl font-medium leading-tight text-[#C9A961] sm:text-5xl md:text-6xl whitespace-nowrap">
-              Ready to begin your wealth management <br /> journey?
+            <h1 className="font-serif text-3xl font-medium leading-tight text-[#C9A961] sm:text-4xl md:text-5xl lg:text-6xl">
+              Ready to begin your wealth management journey?
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-sm leading-6 text-neutral-400 sm:text-base">
               Schedule a confidential consultation to discuss your financial goals and explore how we can serve you.
