@@ -77,7 +77,7 @@ export default function BrokerCheckPage() {
 
             <div className="mt-12  grid grid-cols-1 gap-6 sm:grid-cols-2">
               {cards.map(({ title, description, Icon }) => (
-                <div key={title} className="bg-white px-8 py-20 shadow-sm ring-1 ring-black/5 h-[160px] rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+                <div key={title} className="bg-white px-8 py-12 shadow-sm ring-1 ring-black/5 h-[160px] rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105">
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 items-center justify-center bg-[#F6F2E8] ring-1 ring-black/5">
                       <Icon className="h-5 w-5 text-[#A47B22]" />
