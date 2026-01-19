@@ -25,14 +25,14 @@ export const HeroSection: React.FC = () => {
           <Link href="/schedule">
           <Button
             variant="outline"
-            className="px-8 py-3 border-2 border-[#C9A961] !bg-transparent hover:!bg-transparent text-white hover:text-[#d7be86] hover:border-[#C9A961] transition-colors duration-300 text-base focus:ring-0 focus:ring-offset-0"
+            className="px-8 py-3 border-2 border-[#C9A961] !bg-transparent hover:!bg-transparent text-white hover:text-[#d7be86] hover:border-[#C9A961] transition-colors duration-300 text-md focus:ring-0 focus:ring-offset-0"
           >
             Schedule a Consultation
           </Button>
           </Link>
 
           <Link href="/contact">
-            <span className="inline-flex items-center gap-2 text-[#C9A961] hover:text-[#d7be86] transition-colors text-sm sm:text-base"
+            <span className="inline-flex items-center gap-2 text-[#C9A961] hover:text-[#d7be86] transition-colors text-md sm:text-base"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
             Learn Our Approach
