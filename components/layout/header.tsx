@@ -74,7 +74,7 @@ export const Header: React.FC = () => {
               <Link href="/login">
               <Button 
                 variant="outline" 
-                className="border-[#C9A961] text-[#C9A961] hover:bg-[#C9A961] hover:text-[#121417] transition-all duration-300 px-6 py-2 rounded-md font-medium"
+                className="border-[#C9A961] !bg-transparent text-white hover:bg-[#C9A961] hover:text-[#121417] transition-all duration-300 px-6 py-2 rounded-md font-medium"
                 style={{ fontFamily: 'Playfair Display, serif' }}
               >
                 Log In
@@ -83,7 +83,7 @@ export const Header: React.FC = () => {
               <Link href="/register">
               <Button 
                 variant="outline" 
-                className="border-[#C9A961] bg-transparent text-[#C9A961] hover:bg-[#C9A961] hover:text-[#121417] transition-all duration-300 px-6 py-2 rounded-md font-medium"
+                className="border-[#C9A961] !bg-transparent text-white hover:bg-[#C9A961] hover:text-[#121417] transition-all duration-300 px-6 py-2 rounded-md font-medium"
                 style={{ fontFamily: 'Playfair Display, serif' }}
               >
                 Sign Up
