@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     icon: favicon.src,
   },
 };
-
+ 
 export default function RootLayout({
   children,
 }: Readonly<{
