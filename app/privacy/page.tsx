@@ -127,23 +127,23 @@ export default function PrivacyPage() {
           </div>
         </section>
 
-        <section className="bg-[#f5f3f0] py-16">
+        <section className="bg-[#f5f3f0] py-12 sm:py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_320px]">
-              <div className="space-y-8">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px] xl:gap-10">
+              <div className="space-y-6 sm:space-y-8">
                 {sections.map(({ id, title, Icon, body }) => (
                   <section
                     key={id}
                     id={id}
-                    className="scroll-mt-28 rounded-2xl bg-white px-8 py-10 shadow-sm ring-1 ring-black/5"
+                    className="scroll-mt-28 rounded-xl sm:rounded-2xl bg-white px-6 py-8 sm:px-8 sm:py-10 shadow-sm ring-1 ring-black/5"
                   >
-                    <div className="flex items-start gap-4">
-                      <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-full bg-[#F6F2E8] ring-1 ring-black/5">
-                        <Icon className="h-5 w-5 text-[#A47B22]" />
+                    <div className="flex items-start gap-3 sm:gap-4">
+                      <div className="mt-1 flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-[#F6F2E8] ring-1 ring-black/5 flex-shrink-0">
+                        <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-[#A47B22]" />
                       </div>
-                      <div className="min-w-0">
-                        <h2 className="font-serif text-2xl font-semibold text-neutral-900">{title}</h2>
-                        <div className="mt-4 space-y-3 text-sm leading-6 text-neutral-600">
+                      <div className="min-w-0 flex-1">
+                        <h2 className="font-serif text-xl sm:text-2xl font-semibold text-neutral-900">{title}</h2>
+                        <div className="mt-3 sm:mt-4 space-y-2 sm:space-y-3 text-sm leading-6 text-neutral-600">
                           {body.map((p) => (
                             <p key={p}>{p}</p>
                           ))}
@@ -154,26 +154,26 @@ export default function PrivacyPage() {
                 ))}
               </div>
 
-              <aside className="h-fit rounded-2xl bg-white px-8 py-10 shadow-sm ring-1 ring-black/5">
+              <aside className="order-first lg:order-last h-fit rounded-xl sm:rounded-2xl bg-white px-6 py-8 sm:px-8 sm:py-10 shadow-sm ring-1 ring-black/5">
                 <h3 className="font-serif text-lg font-semibold text-neutral-900">Effective Date</h3>
                 <p className="mt-2 text-xs leading-6 text-neutral-500">Last updated: January 2026</p>
 
-                <div className="mt-8 rounded-xl bg-[#1a1a1a] px-6 py-6 text-white">
+                <div className="mt-6 sm:mt-8 rounded-xl bg-[#1a1a1a] px-4 sm:px-6 py-4 sm:py-6 text-white">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10">
-                      <ShieldCheck className="h-4 w-4 text-[#C9A961]" />
+                    <div className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-full bg-white/10 flex-shrink-0">
+                      <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#C9A961]" />
                     </div>
-                    <p className="font-serif text-lg font-semibold">Important Note</p>
+                    <p className="font-serif text-base sm:text-lg font-semibold">Important Note</p>
                   </div>
-                  <p className="mt-3 text-xs leading-6 text-neutral-300">
+                  <p className="mt-2 sm:mt-3 text-xs leading-5 sm:leading-6 text-neutral-300">
                     Please do not submit confidential or account-specific information through website forms.
                     For sensitive matters, schedule a consultation.
                   </p>
                 </div>
 
-                <div className="mt-8 rounded-xl bg-[#F6F2E8] px-6 py-6">
+                <div className="mt-6 sm:mt-8 rounded-xl bg-[#F6F2E8] px-4 sm:px-6 py-4 sm:py-6">
                   <p className="text-xs font-semibold uppercase tracking-wider text-[#A47B22]">Contact</p>
-                  <p className="mt-2 text-sm font-semibold text-neutral-900">contact@society8807.com</p>
+                  <p className="mt-2 text-sm font-semibold text-neutral-900 break-all">contact@society8807.com</p>
                 </div>
               </aside>
             </div>

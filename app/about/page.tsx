@@ -278,13 +278,13 @@ export default function AboutPage() {
 
                     <p className="mt-4 text-sm leading-6 text-neutral-600">{advisor.bio}</p>
 
-                    <Link
+                    {/* <Link
                       href={`/about/advisors/${advisor.id}`}
                       className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#A47B22] hover:text-[#8D6A1D]"
                     >
                       View Full Bio
                       <span aria-hidden="true">→</span>
-                    </Link>
+                    </Link> */}
                   </div>
                 </article>
               ))}
