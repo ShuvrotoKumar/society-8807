@@ -13,6 +13,8 @@ import {
   Shield,
   ShieldCheck,
   Users,
+  Mail,
+  Phone,
 } from 'lucide-react';
 
 const clientExperience = [
@@ -276,8 +278,30 @@ export default function AboutPage() {
                       ))}
                     </div>
 
-                    <p className="mt-4 text-sm leading-6 text-neutral-600">{advisor.bio}</p>
+                  
 
+                    <div className="mt-6 space-y-3">
+                      <div className="flex items-center gap-3 text-sm">
+                        <Mail className="h-4 w-4 text-[#A47B22]" />
+                        <a 
+                          href={`mailto:${advisor.email}`}
+                          className="text-neutral-600 hover:text-[#A47B22] transition-colors break-all"
+                        >
+                          {advisor.email}
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-3 text-sm">
+                        <Phone className="h-4 w-4 text-[#A47B22]" />
+                        <a 
+                          href={`tel:${advisor.phone}`}
+                          className="text-neutral-600 hover:text-[#A47B22] transition-colors"
+                        >
+                          {advisor.phone}
+                        </a>
+                      </div>
+                    </div>
+
+                        <p className="mt-4 text-sm leading-6 text-neutral-600">{advisor.bio}</p>
                     {/* <Link
                       href={`/about/advisors/${advisor.id}`}
                       className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#A47B22] hover:text-[#8D6A1D]"
