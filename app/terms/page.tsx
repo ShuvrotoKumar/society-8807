@@ -118,62 +118,21 @@ export default function TermsPage() {
           </div>
         </section>
 
-        <section className="bg-[#f5f3f0] py-16">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_320px]">
+        <section className="bg-[#1a1a1a] py-16">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-neutral-300">
               <div className="space-y-8">
-                {termsSections.map(({ id, title, Icon, body }) => (
-                  <section
-                    key={id}
-                    id={id}
-                    className="scroll-mt-28 rounded-2xl bg-white px-8 py-10 shadow-sm ring-1 ring-black/5"
-                  >
-                    <div className="flex items-start gap-4">
-                      <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-full bg-[#F6F2E8] ring-1 ring-black/5">
-                        <Icon className="h-5 w-5 text-[#A47B22]" />
-                      </div>
-                      <div className="min-w-0">
-                        <h2 className="font-serif text-2xl font-semibold text-neutral-900">{title}</h2>
-                        <div className="mt-4 space-y-3 text-sm leading-6 text-neutral-600">
-                          {body.map((p) => (
-                            <p key={p}>{p}</p>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </section>
+                {termsSections.map(({ id, title, body }) => (
+                  <div key={id}>
+                    <h2 className="text-2xl font-semibold text-white">{title}</h2>
+                    {body.map((p) => (
+                      <p key={p} className="mt-4 text-sm leading-6">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
                 ))}
               </div>
-
-              <aside className="h-fit rounded-2xl bg-white px-8 py-10 shadow-sm ring-1 ring-black/5">
-                <h3 className="font-serif text-lg font-semibold text-neutral-900">Effective Date</h3>
-                <p className="mt-2 text-xs leading-6 text-neutral-500">Last updated: January 2026</p>
-
-                <div className="mt-8 rounded-xl bg-[#1a1a1a] px-6 py-6 text-white">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10">
-                      <AlertTriangle className="h-4 w-4 text-[#C9A961]" />
-                    </div>
-                    <p className="font-serif text-lg font-semibold">Important</p>
-                  </div>
-                  <p className="mt-3 text-xs leading-6 text-neutral-300">
-                    For important regulatory information, please review our
-                    <Link href="/disclosures" className="ml-1 text-[#C9A961] underline">
-                      Disclosures
-                    </Link>
-                    and
-                    <Link href="/privacy" className="ml-1 text-[#C9A961] underline">
-                      Privacy Policy
-                    </Link>
-                    .
-                  </p>
-                </div>
-
-                <div className="mt-8 rounded-xl bg-[#F6F2E8] px-6 py-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[#A47B22]">Contact</p>
-                  <p className="mt-2 text-sm font-semibold text-neutral-900">contact@society8807.com</p>
-                </div>
-              </aside>
             </div>
           </div>
         </section>
