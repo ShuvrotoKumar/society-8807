@@ -127,55 +127,67 @@ export default function PrivacyPage() {
           </div>
         </section>
 
-        <section className="bg-[#f5f3f0] py-12 sm:py-16">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px] xl:gap-10">
-              <div className="space-y-6 sm:space-y-8">
-                {sections.map(({ id, title, Icon, body }) => (
-                  <section
-                    key={id}
-                    id={id}
-                    className="scroll-mt-28 rounded-xl sm:rounded-2xl bg-white px-6 py-8 sm:px-8 sm:py-10 shadow-sm ring-1 ring-black/5"
-                  >
-                    <div className="flex items-start gap-3 sm:gap-4">
-                      <div className="mt-1 flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-[#F6F2E8] ring-1 ring-black/5 flex-shrink-0">
-                        <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-[#A47B22]" />
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <h2 className="font-serif text-xl sm:text-2xl font-semibold text-neutral-900">{title}</h2>
-                        <div className="mt-3 sm:mt-4 space-y-2 sm:space-y-3 text-sm leading-6 text-neutral-600">
-                          {body.map((p) => (
-                            <p key={p}>{p}</p>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                ))}
-              </div>
-
-              <aside className="order-first lg:order-last h-fit rounded-xl sm:rounded-2xl bg-white px-6 py-8 sm:px-8 sm:py-10 shadow-sm ring-1 ring-black/5">
-                <h3 className="font-serif text-lg font-semibold text-neutral-900">Effective Date</h3>
-                <p className="mt-2 text-xs leading-6 text-neutral-500">Last updated: January 2026</p>
-
-                <div className="mt-6 sm:mt-8 rounded-xl bg-[#1a1a1a] px-4 sm:px-6 py-4 sm:py-6 text-white">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-full bg-white/10 flex-shrink-0">
-                      <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#C9A961]" />
-                    </div>
-                    <p className="font-serif text-base sm:text-lg font-semibold">Important Note</p>
-                  </div>
-                  <p className="mt-2 sm:mt-3 text-xs leading-5 sm:leading-6 text-neutral-300">
-                    Please do not submit confidential or account-specific information through website forms.
-                    For sensitive matters, schedule a consultation.
+        <section className="bg-[#1a1a1a] py-16">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-neutral-300">
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-2xl font-semibold text-white">Introduction</h2>
+                  <p className="mt-4 text-sm leading-6">
+                    We respect your privacy and are committed to protecting your personal data. This privacy policy explains how
+                    we collect, use, and safeguard your information when you use our services.
                   </p>
                 </div>
 
-                <div className="mt-6 sm:mt-8 rounded-xl bg-[#F6F2E8] px-4 sm:px-6 py-4 sm:py-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[#A47B22]">Contact</p>
-                  <p className="mt-2 text-sm font-semibold text-neutral-900 break-all">contact@society8807.com</p>
+                <div>
+                  <h2 className="text-2xl font-semibold text-white">Data Collection</h2>
+                  <h3 className="mt-4 text-lg font-medium text-white">Information We Collect</h3>
+                  <ul className="mt-2 list-disc pl-5 text-sm leading-6 space-y-1">
+                    <li>Personal Identifiable Information (name, email address, phone number)</li>
+                    <li>Usage data and analytics information</li>
+                    <li>Device information and technical data</li>
+                    <li>Cookies and tracking technologies</li>
+                  </ul>
                 </div>
-              </aside>
+
+                <div>
+                  <h2 className="text-2xl font-semibold text-white">How We Use Your Data</h2>
+                  <p className="mt-4 text-sm leading-6">
+                    We use the collected data to provide, maintain, and improve our services, communicate with you, and enhance
+                    the security of our platform. We may also use your information for analytics and marketing purposes with your
+                    consent.
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl font-semibold text-white">Data Sharing</h2>
+                  <p className="mt-4 text-sm leading-6">
+                    We do not sell, trade, or otherwise transfer your personal information to third parties without your consent,
+                    except as described in this policy. We may share data with trusted service providers who assist us in
+                    operating our services.
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl font-semibold text-white">Data Protection</h2>
+                  <p className="mt-4 text-sm leading-6">
+                    We implement appropriate security measures to protect your personal information against unauthorized
+                    access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100%
+                    secure.
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl font-semibold text-white">Your Rights</h2>
+                  <h3 className="mt-4 text-lg font-medium text-white">You have the right to:</h3>
+                  <ul className="mt-2 list-disc pl-5 text-sm leading-6 space-y-1">
+                    <li>Access and update your personal information</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt-out of marketing communications</li>
+                    <li>Data portability and restriction of processing</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>

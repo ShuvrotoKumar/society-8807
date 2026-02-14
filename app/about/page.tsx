@@ -301,7 +301,7 @@ export default function AboutPage() {
                       </div>
                     </div>
 
-                        <p className="mt-4 text-sm leading-6 text-neutral-600">{advisor.bio}</p>
+                    <p className="mt-4 text-sm leading-6 text-neutral-600">{advisor.bio}</p>
                     {/* <Link
                       href={`/about/advisors/${advisor.id}`}
                       className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#A47B22] hover:text-[#8D6A1D]"
