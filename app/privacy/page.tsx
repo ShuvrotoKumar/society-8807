@@ -1,7 +1,10 @@
-import React from 'react';
+"use client";
+
+import React, { useState, useEffect } from 'react';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-import { ShieldCheck, Cookie, Lock, User, Mail } from 'lucide-react';
+import { ShieldCheck, Cookie, Lock, User, Mail, Edit2, Save, X } from 'lucide-react';
+import { useGetPrivacyQuery, useUpdatePrivacyMutation } from '@/redux/api/privacyApi';
 
 const sections = [
   {
@@ -80,6 +83,58 @@ const sections = [
 ];
 
 export default function PrivacyPage() {
+  const { data: privacyData, isLoading, error } = useGetPrivacyQuery({});
+  const [updatePrivacy, { isLoading: isUpdating }] = useUpdatePrivacyMutation();
+  const [isEditing, setIsEditing] = useState(false);
+  const [editedContent, setEditedContent] = useState('');
+
+  useEffect(() => {
+    if (privacyData) {
+      setEditedContent(JSON.stringify(privacyData, null, 2));
+    }
+  }, [privacyData]);
+
+  const handleSave = async () => {
+    try {
+      const parsedData = JSON.parse(editedContent);
+      await updatePrivacy({ requestData: parsedData }).unwrap();
+      setIsEditing(false);
+    } catch (err) {
+      console.error('Failed to update privacy policy:', err);
+    }
+  };
+
+  const handleCancel = () => {
+    if (privacyData) {
+      setEditedContent(JSON.stringify(privacyData, null, 2));
+    }
+    setIsEditing(false);
+  };
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen">
+        <Header />
+        <div className="flex items-center justify-center min-h-[50vh]">
+          <div className="text-neutral-400">Loading privacy policy...</div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen">
+        <Header />
+        <div className="flex items-center justify-center min-h-[50vh]">
+          <div className="text-red-400">Error loading privacy policy. Please try again later.</div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -89,9 +144,20 @@ export default function PrivacyPage() {
             <span className="inline-flex items-center rounded-full bg-white/5 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#C9A961] ring-1 ring-white/10">
               Legal
             </span>
-            <h1 className="mt-6 font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#C9A961]">
-              Privacy Policy
-            </h1>
+            <div className="flex items-center justify-center gap-4 mt-6">
+              <h1 className="font-serif text-5xl md:text-6xl font-semibold tracking-wide text-[#C9A961]">
+                Privacy Policy
+              </h1>
+              {privacyData && (
+                <button
+                  onClick={() => setIsEditing(!isEditing)}
+                  className="p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
+                  title={isEditing ? "Cancel editing" : "Edit privacy policy"}
+                >
+                  {isEditing ? <X className="w-5 h-5 text-[#C9A961]" /> : <Edit2 className="w-5 h-5 text-[#C9A961]" />}
+                </button>
+              )}
+            </div>
             <p className="mx-auto mt-6 max-w-3xl text-sm leading-6 text-neutral-400">
               We respect your privacy and are committed to protecting the information you share with us.
             </p>
@@ -129,70 +195,105 @@ export default function PrivacyPage() {
 
         <section className="bg-[#1a1a1a] py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-neutral-300">
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-2xl font-semibold text-white">Introduction</h2>
-                  <p className="mt-4 text-sm leading-6">
-                    We respect your privacy and are committed to protecting your personal data. This privacy policy explains how
-                    we collect, use, and safeguard your information when you use our services.
-                  </p>
+            {isEditing ? (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-2xl font-semibold text-white">Edit Privacy Policy</h2>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={handleCancel}
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-700 hover:bg-neutral-600 text-white transition-colors"
+                    >
+                      <X className="w-4 h-4" />
+                      Cancel
+                    </button>
+                    <button
+                      onClick={handleSave}
+                      disabled={isUpdating}
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#C9A961] hover:bg-[#B09050] text-black font-medium transition-colors disabled:opacity-50"
+                    >
+                      <Save className="w-4 h-4" />
+                      {isUpdating ? 'Saving...' : 'Save'}
+                    </button>
+                  </div>
                 </div>
-
-                <div>
-                  <h2 className="text-2xl font-semibold text-white">Data Collection</h2>
-                  <h3 className="mt-4 text-lg font-medium text-white">Information We Collect</h3>
-                  <ul className="mt-2 list-disc pl-5 text-sm leading-6 space-y-1">
-                    <li>Personal Identifiable Information (name, email address, phone number)</li>
-                    <li>Usage data and analytics information</li>
-                    <li>Device information and technical data</li>
-                    <li>Cookies and tracking technologies</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h2 className="text-2xl font-semibold text-white">How We Use Your Data</h2>
-                  <p className="mt-4 text-sm leading-6">
-                    We use the collected data to provide, maintain, and improve our services, communicate with you, and enhance
-                    the security of our platform. We may also use your information for analytics and marketing purposes with your
-                    consent.
-                  </p>
-                </div>
-
-                <div>
-                  <h2 className="text-2xl font-semibold text-white">Data Sharing</h2>
-                  <p className="mt-4 text-sm leading-6">
-                    We do not sell, trade, or otherwise transfer your personal information to third parties without your consent,
-                    except as described in this policy. We may share data with trusted service providers who assist us in
-                    operating our services.
-                  </p>
-                </div>
-
-                <div>
-                  <h2 className="text-2xl font-semibold text-white">Data Protection</h2>
-                  <p className="mt-4 text-sm leading-6">
-                    We implement appropriate security measures to protect your personal information against unauthorized
-                    access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100%
-                    secure.
-                  </p>
-                </div>
-
-                <div>
-                  <h2 className="text-2xl font-semibold text-white">Your Rights</h2>
-                  <h3 className="mt-4 text-lg font-medium text-white">You have the right to:</h3>
-                  <ul className="mt-2 list-disc pl-5 text-sm leading-6 space-y-1">
-                    <li>Access and update your personal information</li>
-                    <li>Request deletion of your data</li>
-                    <li>Opt-out of marketing communications</li>
-                    <li>Data portability and restriction of processing</li>
-                  </ul>
-                </div>
+                <textarea
+                  value={editedContent}
+                  onChange={(e) => setEditedContent(e.target.value)}
+                  className="w-full h-96 p-4 bg-black/50 border border-white/10 rounded-lg text-neutral-300 font-mono text-sm focus:outline-none focus:border-[#C9A961]"
+                  placeholder="Enter privacy policy data as JSON..."
+                />
               </div>
-            </div>
+            ) : (
+              <div className="text-neutral-300">
+                {privacyData ? (
+                  <PrivacyContent data={privacyData} />
+                ) : (
+                  <div className="space-y-8">
+                    {sections.map((section) => (
+                      <div key={section.id} id={section.id}>
+                        <div className="flex items-center gap-3">
+                          <section.Icon className="w-6 h-6 text-[#C9A961]" />
+                          <h2 className="text-2xl font-semibold text-white">{section.title}</h2>
+                        </div>
+                        <div className="mt-4 space-y-2">
+                          {section.body.map((paragraph, index) => (
+                            <p key={index} className="text-sm leading-6">
+                              {paragraph}
+                            </p>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </section>
       </main>
       <Footer />
+    </div>
+  );
+}
+
+function PrivacyContent({ data }: { data: any }) {
+  if (!data) return null;
+
+  return (
+    <div className="space-y-8">
+      {Object.entries(data).map(([key, value]: [string, any]) => {
+        if (typeof value === 'string') {
+          return (
+            <div key={key}>
+              <h2 className="text-2xl font-semibold text-white capitalize">
+                {key.replace(/([A-Z])/g, ' $1').trim()}
+              </h2>
+              <p className="mt-4 text-sm leading-6">{value}</p>
+            </div>
+          );
+        }
+        if (typeof value === 'object' && value !== null) {
+          return (
+            <div key={key}>
+              <h2 className="text-2xl font-semibold text-white capitalize">
+                {key.replace(/([A-Z])/g, ' $1').trim()}
+              </h2>
+              <div className="mt-4 space-y-2">
+                {Object.entries(value).map(([subKey, subValue]: [string, any]) => (
+                  <div key={subKey}>
+                    <h3 className="text-lg font-medium text-white capitalize">
+                      {subKey.replace(/([A-Z])/g, ' $1').trim()}
+                    </h3>
+                    <p className="mt-2 text-sm leading-6">{subValue}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        }
+        return null;
+      })}
     </div>
   );
 }
