@@ -1,9 +1,11 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { baseApi } from "./api/baseApi";
 import { authSlice } from "./Slice/authSlice";
+import { blogApi } from "./api/blogApi";
 
 const rootReducer = combineReducers({
   [baseApi.reducerPath]: baseApi.reducer,
+  [blogApi.reducerPath]: blogApi.reducer,
   auth: authSlice.reducer,
 });
 
@@ -14,5 +16,5 @@ export const store = configureStore({
       serializableCheck: {
         ignoredActions: [],
       },
-    }).concat(baseApi.middleware),
+    }).concat(baseApi.middleware, blogApi.middleware),
 });
