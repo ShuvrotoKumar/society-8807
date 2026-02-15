@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import favicon from "./favicon.png";
+import ReduxProvider from "../redux/ReduxProvider";
 
 export const metadata: Metadata = {
   title: "Society-8807",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
     icon: favicon.src,
   },
 };
- 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href={favicon.src} sizes="any" />
       </head>
       <body className="antialiased" style={{ fontFamily: 'Playfair Display, serif' }}>
-        {children}
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );
