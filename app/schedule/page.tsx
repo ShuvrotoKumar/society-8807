@@ -6,10 +6,12 @@ import { Footer } from '@/components/layout/footer'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import Swal from 'sweetalert2'
+import { useCreateAppointmentMutation } from '@/redux/api/appointmentsApi'
 
 const SchedulePage = () => {
   const [selectedDate, setSelectedDate] = useState(14)
   const [selectedTime, setSelectedTime] = useState('')
+  const [createAppointment, { isLoading, isError, error }] = useCreateAppointmentMutation()
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -48,39 +50,85 @@ const SchedulePage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
+    if (!selectedTime) {
+      Swal.fire({
+        title: 'Time Required',
+        text: 'Please select a preferred time for your appointment.',
+        icon: 'warning',
+        confirmButtonColor: '#C9A961'
+      })
+      return
+    }
+    
+    const meetingPreferenceMap = {
+      'virtual': 'Virtual Meeting (Video Call)',
+      'phone': 'Phone Call',
+      'in-person': 'In-Person Meeting'
+    }
+    
+    const appointmentData = {
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      purpose: formData.consultationPurpose,
+      meetingPreference: meetingPreferenceMap[formData.meetingPreference as keyof typeof meetingPreferenceMap] || 'Virtual Meeting (Video Call)',
+      appointmentDate: `2024-01-${selectedDate.toString().padStart(2, '0')}`,
+      appointmentTime: selectedTime
+    }
+    
     Swal.fire({
       title: 'Confirm Appointment',
       html: `<div style="text-align: left;">
-        <p><strong>Date:</strong> January ${selectedDate}, 2025</p>
+        <p><strong>Date:</strong> January ${selectedDate}, 2024</p>
         <p><strong>Time:</strong> ${selectedTime}</p>
         <p><strong>Name:</strong> ${formData.fullName}</p>
         <p><strong>Email:</strong> ${formData.email}</p>
         <p><strong>Phone:</strong> ${formData.phone}</p>
         <p><strong>Purpose:</strong> ${formData.consultationPurpose}</p>
-        <p><strong>Meeting:</strong> ${formData.meetingPreference === 'virtual' ? 'Virtual Meeting' : formData.meetingPreference === 'phone' ? 'Phone Call' : 'In-Person Meeting'}</p>
+        <p><strong>Meeting:</strong> ${meetingPreferenceMap[formData.meetingPreference as keyof typeof meetingPreferenceMap] || 'Virtual Meeting (Video Call)'}</p>
       </div>`,
       icon: 'question',
       showCancelButton: true,
       confirmButtonColor: '#C9A961',
       cancelButtonColor: '#6b7280',
       confirmButtonText: 'Confirm',
-      cancelButtonText: 'Cancel'
+      cancelButtonText: 'Cancel',
+      showLoaderOnConfirm: true,
+      preConfirm: async () => {
+        try {
+          await createAppointment(appointmentData).unwrap()
+          return true
+        } catch (error) {
+          console.error('Appointment creation failed:', error)
+          throw error
+        }
+      }
     }).then((result) => {
       if (result.isConfirmed) {
-        console.log('Appointment confirmed:', {
-          date: selectedDate,
-          time: selectedTime,
-          ...formData
-        })
         Swal.fire({
           title: 'Confirmed!',
           text: 'Appointment confirmed successfully! We will send you a confirmation email shortly.',
           icon: 'success',
           confirmButtonColor: '#C9A961'
+        }).then(() => {
+          // Reset form after successful submission
+          setFormData({
+            fullName: '',
+            email: '',
+            phone: '',
+            consultationPurpose: '',
+            meetingPreference: 'virtual'
+          })
+          setSelectedTime('')
         })
-      } else {
-        console.log('Appointment cancelled by user')
       }
+    }).catch((error) => {
+      Swal.fire({
+        title: 'Error',
+        text: 'Failed to create appointment. Please try again or contact us directly.',
+        icon: 'error',
+        confirmButtonColor: '#C9A961'
+      })
     })
   }
 
