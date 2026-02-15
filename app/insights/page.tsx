@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import Link from "next/link";
 import { Footer } from "@/components/layout/footer";
@@ -6,6 +8,8 @@ import { useGet_all_blogsQuery } from "@/redux/api/blogApi";
 
 export default function InsightsPage() {
   const { data, error, isLoading } = useGet_all_blogsQuery({});
+
+  console.log('API Response:', data); // Debug log to see the structure
 
   if (isLoading) {
     return (
@@ -93,7 +97,7 @@ export default function InsightsPage() {
         <section className="bg-[#2C2C2C] py-14">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {data?.map((item: any) => (
+              {(Array.isArray(data) ? data : data?.data || data?.blogs || [])?.map((item: any) => (
                 <Link
                   key={item.href || item.id}
                   href={item.href || `/insights/${item.id}`}
