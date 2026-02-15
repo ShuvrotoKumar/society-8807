@@ -336,6 +336,10 @@ export default function AboutPage() {
                           alt={member.name}
                           className="h-full w-full object-cover"
                           loading="lazy"
+                          onError={(e) => {
+                            console.error('Image failed to load:', e.currentTarget.src);
+                            e.currentTarget.src = "/window.svg";
+                          }}
                         />
                       </div>
                       <div className="px-6 pb-7 pt-6">
