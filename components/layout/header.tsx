@@ -71,24 +71,7 @@ export const Header: React.FC = () => {
               </div>
             )}
             <div className="hidden md:flex items-center space-x-3">
-              <Link href="/login">
-              <Button 
-                variant="outline" 
-                className="border-[#C9A961] !bg-transparent text-white hover:!bg-[#C9A961] hover:!text-[#ffffff] transition-all duration-300 px-6 py-2 rounded-md font-medium"
-                style={{ fontFamily: 'Playfair Display, serif' }}
-              >
-                Log In
-              </Button>
-              </Link>
-              <Link href="/register">
-              <Button 
-                variant="outline" 
-                className="border-[#C9A961] !bg-transparent text-white hover:!bg-[#C9A961] hover:!text-[#ffffff] transition-all duration-300 px-6 py-2 rounded-md font-medium"
-                style={{ fontFamily: 'Playfair Display, serif' }}
-              >
-                Sign Up
-              </Button>
-              </Link>
+             
               <Link href="/schedule">
                 <Button 
                   className="bg-gradient-to-r from-[#C9A961] to-[#B8B77A] !text-lg text-white hover:from-[#B8B77A] hover:to-[#A89668] transition-all duration-300 px-6 py-2 rounded-md font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
