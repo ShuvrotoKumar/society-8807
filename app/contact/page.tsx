@@ -1,8 +1,11 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { Button } from "@/components/ui/button";
+import { useUpdateContactMutation } from "@/redux/api/contactApi";
 import {
   Mail,
   MapPin,
@@ -16,6 +19,36 @@ import {
 } from "lucide-react";
 
 export default function ContactPage() {
+  const [updateContact, { isLoading, isSuccess, isError, error }] = useUpdateContactMutation();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    mobile: "",
+    message: "",
+  });
+  const [consent, setConsent] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!consent) {
+      alert("Please consent to the privacy policy to proceed.");
+      return;
+    }
+    try {
+      await updateContact({ requestData: formData }).unwrap();
+      setFormData({ name: "", email: "", subject: "", mobile: "", message: "" });
+      setConsent(false);
+    } catch (err) {
+      console.error("Failed to submit contact form:", err);
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -123,37 +156,57 @@ export default function ContactPage() {
                   Fill out the form below and our team will get back to you within 24 hours.
                 </p>
 
-                <form className="mt-8 space-y-6">
+                <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                     <div>
                       <label className="text-[11px] font-semibold text-neutral-600">Full Name *</label>
                       <input
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                         placeholder="John Smith"
+                        required
                         className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#C9A961]/60"
                       />
                     </div>
                     <div>
                       <label className="text-[11px] font-semibold text-neutral-600">Email Address *</label>
                       <input
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         placeholder="john@example.com"
+                        required
                         className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#C9A961]/60"
                       />
                     </div>
                   </div>
 
-                  <div>
-                    <label className="text-[11px] font-semibold text-neutral-600">Phone Number</label>
-                    <input
-                      placeholder="+1 (555) 000-0000"
-                      className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#C9A961]/60"
-                    />
-                  </div>
+                  <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                    <div>
+                      <label className="text-[11px] font-semibold text-neutral-600">Subject *</label>
+                      <input
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        placeholder="Question about service"
+                        required
+                        className="mt-2 w-full rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#C9A961]/60"
+                      />
+                    </div>
+                    
+                    </div>
 
                   <div>
                     <label className="text-[11px] font-semibold text-neutral-600">Message *</label>
                     <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       rows={5}
                       placeholder="Tell us about your financial goals and how we can help..."
+                      required
                       className="mt-2 w-full resize-none rounded-md border border-black/10 bg-white px-4 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[#C9A961]/60"
                     />
                   </div>
@@ -161,6 +214,9 @@ export default function ContactPage() {
                   <div className="flex items-start gap-3">
                     <input
                       type="checkbox"
+                      checked={consent}
+                      onChange={(e) => setConsent(e.target.checked)}
+                      required
                       className="mt-1 h-4 w-4 rounded border-black/20 text-[#C9A961] focus:ring-[#C9A961]"
                     />
                     <p className="text-[11px] leading-5 text-neutral-500">
@@ -173,9 +229,25 @@ export default function ContactPage() {
                     </p>
                   </div>
 
+                  {isSuccess && (
+                    <div className="rounded-md bg-green-50 p-3 text-sm text-green-700">
+                      Thank you! Your message has been sent successfully. We will get back to you within 24 hours.
+                    </div>
+                  )}
+
+                  {isError && (
+                    <div className="rounded-md bg-red-50 p-3 text-sm text-red-700">
+                      Failed to send message. Please try again later.
+                    </div>
+                  )}
+
                   <div className="pt-2">
-                    <Button className="h-11 w-full rounded-md !bg-[#C9A961] text-[13px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#C9A961]">
-                      Send Message
+                    <Button
+                      type="submit"
+                      disabled={isLoading}
+                      className="h-11 w-full rounded-md !bg-[#C9A961] text-[13px] font-medium !text-black hover:!bg-[#B99225] focus:!ring-[#C9A961] disabled:opacity-50"
+                    >
+                      {isLoading ? "Sending..." : "Send Message"}
                     </Button>
                   </div>
                 </form>
